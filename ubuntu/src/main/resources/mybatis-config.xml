@@ -4,6 +4,6 @@
 <configuration>
 	<typeAliases>
 		<typeAlias alias="product" type="com.company.ubuntu.ProductVO"/>
-		<typeAlias alias="user" type="com.company.ubuntu.UserVO"/>
+		<typeAlias alias="member" type="com.company.ubuntu.MemberVO"/>
 	</typeAliases>
 </configuration>

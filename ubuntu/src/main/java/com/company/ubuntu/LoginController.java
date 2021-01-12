@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class LoginController {
 	
 	@Autowired
-	UserService userservice;
+	MemberService userservice;
 	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String login(String t, Model model) {
@@ -22,13 +22,13 @@ public class LoginController {
 	}
 	
 	@RequestMapping(value = "/loginOk", method = RequestMethod.POST)
-	public String loginCheck(HttpSession session, UserVO vo) {
+	public String loginCheck(HttpSession session, MemberVO vo) {
 		String returnURL = "";
 		if(session.getAttribute("login") != null) {
 			session.removeAttribute("login");
 		}
 		
-		UserVO loginvo = userservice.getUser_login(vo);
+		MemberVO loginvo = userservice.getMember_login(vo);
 		
 		if(loginvo != null) {
 			//System.out.println(loginvo.getUserid());

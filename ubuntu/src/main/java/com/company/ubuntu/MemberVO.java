@@ -2,15 +2,12 @@ package com.company.ubuntu;
 
 import java.util.*;
 
-public class UserVO {
+public class MemberVO {
 	private int sid;
 	private String userid;
 	private String username;
 	private String password;
 	private String email;
-	private String blogurl;
-	private String photo;
-	private String detail;
 	private Date regdate;
 	
 	public int getSid() {
@@ -42,24 +39,6 @@ public class UserVO {
 	}
 	public void setEmail(String email) {
 		this.email = email;
-	}
-	public String getBlogurl() {
-		return blogurl;
-	}
-	public void setBlogurl(String blogurl) {
-		this.blogurl = blogurl;
-	}
-	public String getPhoto() {
-		return photo;
-	}
-	public void setPhoto(String photo) {
-		this.photo = photo;
-	}
-	public String getDetail() {
-		return detail;
-	}
-	public void setDetail(String detail) {
-		this.detail = detail;
 	}
 	public Date getRegdate() {
 		return regdate;

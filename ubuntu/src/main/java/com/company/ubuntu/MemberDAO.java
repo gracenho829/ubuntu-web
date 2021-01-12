@@ -1,42 +1,37 @@
 package com.company.ubuntu;
 
-import java.sql.*;
 import java.util.*;
-
-import org.apache.ibatis.session.SqlSession;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.company.ubuntu.UserVO;
-
 @Repository
-public class UserDAO {
+public class MemberDAO {
 	@Autowired
 	SqlSessionTemplate sqlSession;
 	
-	public int insertUser(UserVO vo) {
-		return sqlSession.insert("User.insertUser", vo);
+	public int insertMember(MemberVO vo) {
+		return sqlSession.insert("Member.insertMember", vo);
 	}
 	
-	public int deleteUser(int seq) {
-		return sqlSession.delete("User.deleteUser", seq);
+	public int deleteMember(int seq) {
+		return sqlSession.delete("Member.deleteMember", seq);
 	}
 	
-	public int updateUser(UserVO vo) {
-		return sqlSession.update("User.updateUser", vo);
+	public int updateMember(MemberVO vo) {
+		return sqlSession.update("Member.updateMember", vo);
 	}
 	
-	public UserVO getUser(int sid) {
-		return sqlSession.selectOne("User.getUser", sid);
+	public MemberVO getMember(int sid) {
+		return sqlSession.selectOne("Member.getMember", sid);
 	}
 	
-	public UserVO getUser_login(UserVO vo) {
-		return sqlSession.selectOne("User.getUser_login", vo);
+	public MemberVO getMember_login(MemberVO vo) {
+		return sqlSession.selectOne("Member.getMember_login", vo);
 	}
 	
-	public List<UserVO> getUserList() {
-		return sqlSession.selectList("User.getUserList");
+	public List<MemberVO> getMemberList() {
+		return sqlSession.selectList("Member.getMemberList");
 	}
 }
 

@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="User">
+<mapper namespace="Member">
 
-	<select id="getUser_login" resultType="user">
+	<select id="getMember_login" resultType="member">
 		select userid, username from member
 		where userid=#{userid} and password=#{password}
 	</select>
 	
-	<insert id="insertUser">
+	<insert id="insertMember">
 		insert into member (userid, username, password, email)
 		value
 		(#{userid}, #{username}, #{password}, #{email})
 	</insert>
-	<update id="updateUser">
+	<update id="updateMember">
 		update member
 		set userid=#{userid}, username=#{username}, password=#{password}, email=#{email}
 		where sid=#{sid}
 	</update>
-	<delete id="deleteUser">
+	<delete id="deleteMember">
 		delete from member where sid=#{sid}
 	</delete>
-	<select id="getUser" resultType="user">
+	<select id="getMember" resultType="member">
 		select * from member where sid=#{sid}
 	</select>
-	<select id="getUserList" resultType="user">
+	<select id="getMemberList" resultType="member">
 		select * from member order by sid desc
 	</select>
 	
