@@ -5,8 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="resources/style.css">
 </head>
 <body>
+<h1>
+	Hello world!  
+</h1>
 	<input type="text" id="sample3_postcode" placeholder="우편번호">
 	<input type="button" onclick="DaumPostcode()" value="우편번호 찾기"><br>
 	<input type="text" id="sample3_address" placeholder="주소"><br>

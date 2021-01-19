@@ -5,11 +5,11 @@
 <head>
 <meta charset="UTF-8">
 <title>주문내역</title>
-<link rel="stylesheet" href="${pageContext.request.contextPath}/src/main/webapp/resources/style.css" type="text/css" >
+<link rel="stylesheet" type="text/css" href="resources/style.css">
 </head>
 <body>
 <div class = "header">
-<img src = "../images/logo.png"/>
+<img src = "resources/img/logo.jpg"/>
 <h4>주문내역</h4>
 <ul>
 	<li>브랜드</li>
