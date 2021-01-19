@@ -14,5 +14,8 @@
 
 <P>  The time on the server is ${serverTime}. </P>
 <a href = "orders">Here</a>
+<a href="reserve1">Reserve1.jsp</a>
+<a href="reserve2">Reserve2.jsp</a>
+<a href="reserve3">Reserve3.jsp</a>
 </body>
 </html>

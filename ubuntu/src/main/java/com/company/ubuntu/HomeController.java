@@ -41,5 +41,24 @@ public class HomeController {
 		
 		return "orders";
 	
-}
+	}
+	@RequestMapping(value = "/reserve1", method = RequestMethod.GET)
+	public String reserve() {
+		
+		return "reserve1";
+	
+	}
+	
+	@RequestMapping(value = "/reserve2", method = RequestMethod.GET)
+	public String reserve2() {
+		
+		return "reserve2";
+	
+	}
+	@RequestMapping(value = "/reserve3", method = RequestMethod.GET)
+	public String reserve3() {
+		
+		return "reserve3";
+	
+	}
 }
