@@ -8,26 +8,26 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping(value="/product")
+@RequestMapping(value="/reservation")
 public class ReservationController {
 	
 	@Autowired
-	ReservationService ProductService;
+	ReservationService ReservationService;
 	
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
-	public String productlist(Model model) {
-		model.addAttribute("list", ProductService.getProductList());
-		return "Product/list";
+	public String Reservationlist(Model model) {
+		model.addAttribute("list", ReservationService.getReservationList());
+		return "Reservation/list";
 	}
 	
 	@RequestMapping(value = "/add", method = RequestMethod.GET)
 	public String addPost() {
-		return "Product/addproductform";
+		return "Reservation/addreservationform";
 	}
 	
 	@RequestMapping(value = "/addok", method = RequestMethod.POST)
 	public String addPostOK(ReservationVO vo) {
-		if(ProductService.insertProduct(vo) == 0)
+		if(ReservationService.insertReservation(vo) == 0)
 			System.out.println("데이터 추가 실패 ");
 		else
 			System.out.println("데이터 추가 성공!!!");
@@ -36,14 +36,14 @@ public class ReservationController {
 	
 	@RequestMapping(value = "/editform/{id}", method = RequestMethod.GET)
 	public String editPost(@PathVariable("id") int id, Model model) {
-		ReservationVO productVO = ProductService.getProduct(id);
-		model.addAttribute("u", productVO);
-		return "Product/editform";
+		ReservationVO reservationVO = ReservationService.getReservation(id);
+		model.addAttribute("u", reservationVO);
+		return "Reservation/editform";
 	}
 	
 	@RequestMapping(value = "/editok", method = RequestMethod.POST)
 	public String editPostOK(ReservationVO vo) {
-		if(ProductService.updateProduct(vo) == 0)
+		if(ReservationService.updateReservation(vo) == 0)
 			System.out.println("데이터 추가 실패 ");
 		else
 			System.out.println("데이터 추가 성공!!!");
@@ -52,14 +52,14 @@ public class ReservationController {
 	
 	@RequestMapping(value = "/detail/{id}", method = RequestMethod.GET)
 	public String detailPost(@PathVariable("id") int id, Model model) {
-		ReservationVO productVO = ProductService.getProduct(id);
-		model.addAttribute("u", productVO);
-		return "Product/detail";
+		ReservationVO reservationVO = ReservationService.getReservation(id);
+		model.addAttribute("u", reservationVO);
+		return "Reservation/detail";
 	}
 	
 	@RequestMapping(value = "/deleteok/{id}", method = RequestMethod.GET)
 	public String deletePostOk(@PathVariable("id") int id) {
-		if(ProductService.deleteProduct(id) == 0)
+		if(ReservationService.deleteReservation(id) == 0)
 			System.out.println("데이터 삭제 실패 ");
 		else
 			System.out.println("데이터 삭제 성공!!!");

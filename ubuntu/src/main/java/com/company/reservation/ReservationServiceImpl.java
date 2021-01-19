@@ -9,30 +9,30 @@ import java.util.*;
 public class ReservationServiceImpl implements ReservationService{
 
 		@Autowired
-		ReservationDAO productDAO;
+		ReservationDAO reservationDAO;
 		
 		@Override
-		public int insertProduct(ReservationVO vo) {
-			return productDAO.insertProduct(vo);
+		public int insertReservation(ReservationVO vo) {
+			return reservationDAO.insertReservation(vo);
 		}
 		
 		@Override
-		public int deleteProduct(int seq) {
-			return productDAO.deleteProduct(seq);
+		public int deleteReservation(int seq) {
+			return reservationDAO.deleteReservation(seq);
 		}
 		
 		@Override
-		public int updateProduct(ReservationVO vo) {
-			return productDAO.updateProduct(vo);
+		public int updateReservation(ReservationVO vo) {
+			return reservationDAO.updateReservation(vo);
 		}
 		
 		@Override
-		public ReservationVO getProduct(int seq) {
-			return productDAO.getProduct(seq);
+		public ReservationVO getReservation(int seq) {
+			return reservationDAO.getReservation(seq);
 		}
 		
 		@Override
-		public List<ReservationVO> getProductList() {
-			return productDAO.getProductList();
+		public List<ReservationVO> getReservationList() {
+			return reservationDAO.getReservationList();
 		}
 }

@@ -12,23 +12,23 @@ public class ReservationDAO {
 	@Autowired
 	SqlSession sqlSession;
 	
-	public int insertProduct(ReservationVO vo) {
-		return sqlSession.insert("Product.insertProduct", vo);
+	public int insertReservation(ReservationVO vo) {
+		return sqlSession.insert("Reservation.insertReservation", vo);
 	}
 	
-	public int deleteProduct(int seq) {
-		return sqlSession.delete("Product.deleteProduct", seq);
+	public int deleteReservation(int seq) {
+		return sqlSession.delete("Reservation.deleteReservation", seq);
 	}
 	
-	public int updateProduct(ReservationVO vo) {
-		return sqlSession.update("Product.updateProduct", vo);
+	public int updateReservation(ReservationVO vo) {
+		return sqlSession.update("Reservation.updateReservation", vo);
 	}
 	
-	public ReservationVO getProduct(int seq) {
-		return sqlSession.selectOne("Product.getProduct", seq);
+	public ReservationVO getReservation(int seq) {
+		return sqlSession.selectOne("Reservation.getReservation", seq);
 	}
 	
-	public List<ReservationVO> getProductList() {
-		return sqlSession.selectList("Product.getProductList");
+	public List<ReservationVO> getReservationList() {
+		return sqlSession.selectList("Reservation.getReservationList");
 	}
 }
