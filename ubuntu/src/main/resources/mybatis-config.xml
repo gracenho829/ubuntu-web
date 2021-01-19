@@ -3,7 +3,9 @@
 "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias alias="product" type="com.company.ubuntu.ProductVO"/>
-		<typeAlias alias="member" type="com.company.ubuntu.MemberVO"/>
+		<typeAlias alias="product" type="com.company.product.ProductVO"/>
+		<typeAlias alias="member" type="com.company.member.MemberVO"/>
+		<typeAlias alias="partner" type="com.company.partner.PartnerVO"/>
+		<typeAlias alias="reservation" type="com.company.reservation.ReservationVO"/>
 	</typeAliases>
 </configuration>

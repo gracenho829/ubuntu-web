@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Partner">
+	<insert id="insertPartner">
+		insert into PARTNER (field, name, phone)
+		value
+		(#{field}, #{name}, #{phone})
+	</insert>
+	<update id="updatePartner">
+		update PARTNER
+		set field=#{field}, name=#{name}, phone=#{phone}
+		where seq=#{seq}
+	</update>
+	<delete id="deletePartner">
+		delete from PARTNER where seq=#{seq}
+	</delete>
+	<select id="getPartner" resultType="partner">
+		select * from PARTNER where seq=#{seq}
+	</select>
+	<select id="getPartnerList" resultType="partner">
+		select * from PARTNER order by seq desc
+	</select>
+</mapper>
