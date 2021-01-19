@@ -10,13 +10,13 @@
 <body>
 <div class = "header">
 <img src = "resources/img/logo.jpg"/>
-<h4>주문내역</h4>
+<h4 style="margin-right: 30%;">주문내역</h4>
 <ul>
 	<li>브랜드</li>
 	<li>예약하기</li>
 	<li>브랜드샵</li>
 	<li>커뮤니티</li>
-	<li>로그인</li>
+	<li style="margin-right: 0px;">로그인</li>
 </ul>
 </div>
 <hr>
