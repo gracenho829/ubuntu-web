@@ -11,6 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+
 /**
  * Handles requests for the application home page.
  */
@@ -35,6 +36,18 @@ public class HomeController {
 		
 		return "home";
 	}
+	@RequestMapping(value = "/orders", method = RequestMethod.GET)
+	public String checkOrders() {
+		
+		return "orders";
+	
+	}
+	@RequestMapping(value = "/reserve1", method = RequestMethod.GET)
+	public String reserve() {
+		
+		return "reserve1";
+	
+	}
 	
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
 	public String test(Locale locale, Model model) {
@@ -48,4 +61,16 @@ public class HomeController {
 		return "test";
 	}
 	
+	@RequestMapping(value = "/reserve2", method = RequestMethod.GET)
+	public String reserve2() {
+		
+		return "reserve2";
+	
+	}
+	@RequestMapping(value = "/reserve3", method = RequestMethod.GET)
+	public String reserve3() {
+		
+		return "reserve3";
+	
+	}
 }

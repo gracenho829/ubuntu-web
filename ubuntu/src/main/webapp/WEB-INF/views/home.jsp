@@ -9,6 +9,7 @@
 <title>home</title>
 </head>
 <body>
+<<<<<<< HEAD
 	<input type="text" id="sample3_postcode" placeholder="우편번호">
 <input type="button" onclick="DaumPostcode()" value="우편번호 찾기"><br>
 <input type="text" id="sample3_address" placeholder="주소"><br>
@@ -97,5 +98,19 @@
     }
 </script>
 
+=======
+<h1>
+	Hello world!  
+</h1>
+<p>
+	#ubuntu web project#
+</p>
+
+<P>  The time on the server is ${serverTime}. </P>
+<a href = "orders">Here</a>
+<a href="reserve1">Reserve1.jsp</a>
+<a href="reserve2">Reserve2.jsp</a>
+<a href="reserve3">Reserve3.jsp</a>
+>>>>>>> bdff7e79e78768f9c541d88767881d7950c31ca0
 </body>
 </html>
