@@ -34,22 +34,6 @@ public class ReservationController {
 		return "redirect:list";
 	}
 	
-	@RequestMapping(value = "/editform/{id}", method = RequestMethod.GET)
-	public String editPost(@PathVariable("id") int id, Model model) {
-		ReservationVO reservationVO = ReservationService.getReservation(id);
-		model.addAttribute("u", reservationVO);
-		return "Reservation/editform";
-	}
-	
-	@RequestMapping(value = "/editok", method = RequestMethod.POST)
-	public String editPostOK(ReservationVO vo) {
-		if(ReservationService.updateReservation(vo) == 0)
-			System.out.println("데이터 추가 실패 ");
-		else
-			System.out.println("데이터 추가 성공!!!");
-		return "redirect:list";
-	}
-	
 	@RequestMapping(value = "/detail/{id}", method = RequestMethod.GET)
 	public String detailPost(@PathVariable("id") int id, Model model) {
 		ReservationVO reservationVO = ReservationService.getReservation(id);

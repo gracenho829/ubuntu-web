@@ -22,11 +22,6 @@ public class ReservationServiceImpl implements ReservationService{
 		}
 		
 		@Override
-		public int updateReservation(ReservationVO vo) {
-			return reservationDAO.updateReservation(vo);
-		}
-		
-		@Override
 		public ReservationVO getReservation(int seq) {
 			return reservationDAO.getReservation(seq);
 		}
