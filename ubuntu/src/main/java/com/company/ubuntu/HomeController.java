@@ -58,7 +58,7 @@ public class HomeController {
 		String formattedDate = dateFormat.format(date);
 		               
 		model.addAttribute("serverTime", formattedDate );
-		return "test";
+		return "post_Sample";
 	}
 	
 	@RequestMapping(value = "/reserve2", method = RequestMethod.GET)
