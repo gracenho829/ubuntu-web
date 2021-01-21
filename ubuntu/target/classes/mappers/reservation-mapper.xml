@@ -2,15 +2,24 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Reservation">
 	<insert id="insertReservation">
-		insert into RESERVATION (product, photo, detail, review, discount, price, delivery)
+		insert into RESERVATION (kitchen, kitchen_drawer, fridge, toilet, double_window_S_kitchen_dress, double_window_M_room, 
+								double_window_B_living, double_window_B_veranda, single_window_S_kitchen_dress, single_window_M_room, 
+								single_window_B_living, single_window_B_veranda, room_floor, room_drawer, room_light, room_molding_top, 
+								room_molding_bottom, living_floor, living_artwall, living_molding_top, living_molding_bottom, living_light, 
+								shoes, veranda, dress, trash, single, super_single, double, queen, king, super_king, ultra_king, 
+								order_production, membership_one, membership_two, membership_three, washcar, joint_toilet, 
+								joint_bathroom_sink, joint_door, joint_dress, joint_, disinfect, pest, rat, disinfect_and_pest, 
+								house_new, house_move, house_live)
 		value
-		(#{product}, #{photo}, #{detail}, #{review}, #{discount}, #{price}, #{delivery})
+		(#{kitchen}, #{kitchen_drawer}, #{fridge}, #{toilet}, #{double_window_S_kitchen_dress}, #{double_window_M_room}, 
+		#{double_window_B_living}, #{double_window_B_veranda}, #{single_window_S_kitchen_dress}, #{single_window_M_room}, 
+		#{single_window_B_living}, #{single_window_B_veranda}, #{room_floor}, #{room_drawer}, #{room_light}, #{room_molding_top}, 
+		#{room_molding_bottom}, #{living_floor}, #{living_artwall}, #{living_molding_top}, #{living_molding_bottom}, #{living_light}, 
+		#{shoes}, #{veranda}, #{dress}, #{trash}, #{single}, #{super_single}, #{double}, #{queen}, #{king}, #{super_king}, #{ultra_king}, 
+		#{order_production}, #{membership_one}, #{membership_two}, #{membership_three}, #{washcar}, #{joint_toilet}, 
+		#{joint_bathroom_sink}, #{joint_door}, #{joint_dress}, #{joint_}, #{disinfect}, #{pest}, #{rat}, #{disinfect_and_pest}, 
+		#{house_new}, #{house_move}, #{house_live})
 	</insert>
-	<update id="updateReservation">
-		update RESERVATION
-		set product=#{product}, photo=#{photo}, detail=#{detail}, review=#{review}, discount=#{discount}, price=#{price}, delivery=#{delivery}
-		where seq=#{seq}
-	</update>
 	<delete id="deleteReservation">
 		delete from RESERVATION where seq=#{seq}
 	</delete>
@@ -21,3 +30,4 @@
 		select * from RESERVATION order by seq desc
 	</select>
 </mapper>
+

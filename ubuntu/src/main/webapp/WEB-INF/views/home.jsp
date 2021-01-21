@@ -22,8 +22,6 @@
 <a href = "orders">Here</a>
 <a href="reserve1">Reserve1.jsp</a>
 <a href="reserve2">Reserve2.jsp</a>
-<a href="reserve3">Reserve3.jsp</a> <br><br>
-<a href="login">Login</a>
->>>>>>> bdff7e79e78768f9c541d88767881d7950c31ca0
+<a href="reserve3">Reserve3.jsp</a>
 </body>
 </html>
