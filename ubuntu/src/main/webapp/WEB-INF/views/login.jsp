@@ -8,6 +8,7 @@
 <title>로그인</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="resources/style.css">
+<link rel = "stylesheet" type = "text/css" href="resources/login.css">
 
 <style>
 	@media screen and (max-width: 479px) {
@@ -66,16 +67,23 @@ function myFunction() {
 	
 	
 <!-- -------------- Login --------------  -->
-	<div id = "login">
-		<h1>Login</h1>
+	<div class = "wrapper">
+		<div id = "login">
+			<div id="center"></div>
+				<h1>LOGIN</h1>
+				<br>
+				<input type = "text" id = "uname" name = "uname" required placeholder="ID"/>
+				<input type = "password" id = "password" name = "password" required placeholder="PASSWORD"/><br>
+				<input type="submit" value="로그인"/>
+				<br>
+				<div id = "register">
+				<p>아직 회원이 아니시라면?</p><input type="button" value="회원가입"/>
+				</div>
+			</div>
+		</div>
 	</div>
-	
-	
-<!-- -------------- Footer --------------  -->
-	<div class = "footer">
-		<img src = "resources/img/logo_white.png" style ="height:30px;">
-		<p>(주) 우분투 | 대표 최진설 | 사업자등록번호 630-88-00736 | 계좌번호 하나은행 856 910009 07204<br>통신판매업신고 000000000000 | 이메일 jinserr3927@naver.com | 본사 대전광역시 서구 월평동363번지 1층 노블한<br> 지사 공장 전라남도 담양군 담양읍 에코산단 6로
-	</div>
+
+
 
 </body>
 </html>

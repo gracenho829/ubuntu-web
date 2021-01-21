@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+h1{
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 300;
+	color: white;
+}
+#register{
+	display:inline-block;
+	margin-top: 30px;
+}
+p{
+	font-size: 10px;
+	float:left;
+	margin-right: 10px;
+}
+
+#login {
+	width: 530px;
+	background-color: #11A0E2;
+	border:3px solid white;
+	color: white;
+	height: 550px;
+	border-radius: 50px;
+	text-align:center;
+	margin-top: 30px;
+	vertical-align: middle;
+	display: inline-block;
+	left:436px;
+}
+
+.wrapper{
+	width: 100%;
+	text-align: center;
+}
+#center{
+	text-align:center;
+	padding: 30px 0;
+}
+
+input[type="text"], input[type="password"]{
+	font-family: 'Noto Sans KR', sans-serif;
+	background: none;
+	border:1px solid white;
+	width: 250px;
+	height:40px;
+	border-radius: 18px;
+	padding-left: 30px;
+	color: white;
+	margin-top: 30px;
+}
+
+input[type=submit] {
+  width: 170px;
+  height:40px;
+  border-radius: 20px;
+  background-color: white;
+  border: none;
+  color: #11A0E2;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 50px;
+}
+input[type=button]{
+	width: 60px;
+  	height:20px;
+  	background-color: white;
+  	border: none;
+ 	color: #11A0E2;
+ 	text-decoration: none;
+  	cursor: pointer;
+  	border-radius: 10px;
+  	display:inline-block;
+  	font-size: 10px;
+ 	
+}
+
+::placeholder{
+	color:white;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight:300;
+}
