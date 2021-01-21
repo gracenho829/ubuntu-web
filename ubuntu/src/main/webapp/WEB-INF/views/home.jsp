@@ -24,6 +24,7 @@
 <a href="reserve2">Reserve2.jsp</a>
 <a href="reserve3">Reserve3.jsp</a> <br><br>
 <a href="login">Login</a>
+<a href="register">Register</a>
 >>>>>>> bdff7e79e78768f9c541d88767881d7950c31ca0
 </body>
 </html>

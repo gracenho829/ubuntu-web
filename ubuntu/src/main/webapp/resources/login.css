@@ -32,32 +32,89 @@ p{
 	left:436px;
 }
 
+#registerBlock {
+	width: 1000px;
+	background-color: #11A0E2;
+	border:3px solid white;
+	color: white;
+	height: 600px;
+	border-radius: 50px;
+	text-align:center;
+	margin-top: 30px;
+	vertical-align: middle;
+	display: inline-block;
+	left:436px;
+}
+
+#registerBlock input[type=submit]{
+	font-weight:700;
+}
+#registerBlock input[type="button"]{
+	border-radius: 10px; 
+	margin-left: 10px;
+
+	}
+
+
 .wrapper{
 	visibility:visible;
 	width: 100%;
 	text-align: center;
 }
+
 #center{
 	text-align:center;
-	padding: 30px 0;
+	margin-top: 70px;
 }
 
-input[type="text"], input[type="password"]{
+#left{
+	float:left;
+	text-align:left;
+	margin-right: 90px;
+	margin-left: 80px;
+}
+#right{
+	text-align:left;
+	float:left;
+}
+
+#postalCode{
+	width: 105px;
+  	height:40px;
+  	border-radius: 18px;
+	
+}
+
+#registerBlock input[type="number"]{
+	width:225px;
+	border-radius:10px;
+}
+label{
+	margin-top:20px;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
+	-webkit-appearance:none;
+	margin:0;
+}
+input[type=number]{
+	-moz-appearance: textfield;
+}
+input[type="text"], input[type="password"], input[type=tel], input[type=email], input[type=number]{
 	font-family: 'Noto Sans KR', sans-serif;
 	background: none;
 	border:1px solid white;
-	width: 250px;
+	width: 350px;
 	height:40px;
 	border-radius: 18px;
 	padding-left: 30px;
 	color: white;
-	margin-top: 30px;
+	margin-top: 10px;
 }
 
 input[type=submit] {
-  width: 170px;
-  height:40px;
-  border-radius: 20px;
+  width: 250px;
+  height:50px;
+  border-radius: 30px;
   background-color: white;
   border: none;
   color: #11A0E2;
@@ -79,6 +136,7 @@ input[type=button]{
  	
 }
 
+
 ::placeholder{
 	color:white;
 	font-family: 'Noto Sans KR', sans-serif;
@@ -95,16 +153,46 @@ input[type=button]{
 		display: inline-block;
 		left:436px;
 	}
-	input[type="text"], input[type="password"]{
-	width: 200px;
+	
+	#registerBlock {
+		width: 700px;
+		height: 550px;
+		border-radius: 40px;
+		margin-top: 50px;
+		display: inline-block;
+		left:436px;
+	}
+	#registerBlock input[type="number"]{
+	width:140px;
+	border-radius:10px;
+	height:30px;
+	}
+	#registerBlock input[type="button"]{
+	border-radius: 10px; 
+	margin-left: 10px;
+	height:35px;
+	width:85px;
+
+	}
+	#left{
+	float:left;
+	text-align:left;
+	margin-right: 70px;
+	margin-left: 30px;
+	}
+	#right{
+		text-align:left;
+		float:left;
+	}
+	input[type="text"], input[type="password"], input[type=tel], input[type=email]{
+	width: 250px;
 	height:30px;
 	border-radius: 15px;
 	padding-left: 20px;
-	margin-top: 20px;
 	}
 	input[type=submit] {
-	  width: 100px;
-	  height:30px;
+	  width: 200px;
+	  height:40px;
 	  border-radius: 20px;
 	  margin-top: 40px;
 	}
@@ -126,24 +214,95 @@ input[type=button]{
 	}
 	
 }
+input:focus{
+	outline:none;
+}
 @media screen and (max-width: 479px) {
+	body{
+		background:#0C63F1;
+	}
+	.header{
+	background:#0C63F1;
+	}
+	.header ul{
+		display:none;
+	}
+	.header img{
+	display:none;
+	}
+	
+	.topnav {
+		display:block;
+		padding-top:0px;
+		margin:0px;
+		  position: absolute;
+		  background-color:#fff;
+		  right: 5vw;
+		  top: 25px;
+	}
+
+	.topnav #myLinks {
+	  display: none;
+	  width:   30vw;
+	}
+	
+	.topnav a {
+	  color: black;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 12px;
+	  display: block;
+	}
+	
+	.topnav a.icon {
+	  display: block;
+	  position: absolute;
+	  right: 0;
+	  font-size: 20px;
+	}
+	
+	.topnav a:hover {
+	  background-color: #ddd;
+	  color: black;
+	}
+	
 	#login{
 	border:none;
 	background:#0C63F1;
 	margin-top:20px;
 	}
 	
-	input[type=text]{
-		margin-top:40px;
+	#registerBlock{
+	border:none;
+	background:#0C63F1;
+	width:100vw;
+	margin-top: 0px;
+	}
+	
+	#registerBlock h1{
+	float:left;
+	margin-left: 40px;
+	margin-top:0px;
+	}
+	
+	input[type="text"], input[type="password"], input[type=tel], input[type=email]{
+		margin-top:20px;
+		width: 70vw;
 	}
 	input[type=submit]{
 	color: #0C63F1;
+	margin-bottom:30px;
+	
 	}
 	input[type=button]{
 		width: 60px;
 	  	height:20px;
 	 	color: #0C63F1;
 	 	
+	}
+	#right{
+		margin-top: 30px;
+		margin-left: 30px;
 	}
 	
 }

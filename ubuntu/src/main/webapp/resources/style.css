@@ -119,6 +119,7 @@ li:hover{
 }
 
 @media screen and (max-width: 479px) {
+	
 /* start of phone styles */
 	.header ul{
 	display:none;
