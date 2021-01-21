@@ -21,9 +21,6 @@
 		body{
 		background-color: #0C63F1;
 		}
-		h4{
-			visibility:hidden;
-		}
 	}
 </style>
 </head>
@@ -41,7 +38,6 @@ function myFunction() {
 <!-- --------------Header--------------  -->
 	<div class = "header">
 		<img src = "resources/img/logo.jpg"/>
-		<h4 id="headerTitle">로그인</h4>
 		<ul>
 			<li>브랜드</li>
 			<li>예약하기</li>
@@ -53,7 +49,7 @@ function myFunction() {
 		<!-- Top Navigation Menu -->
 		<div class="topnav">
 		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-		    <i class="fa fa-bars"></i>
+		    <i class="fa fa-bars" style="color:white;"></i>
 		  </a>
 		  <div id="myLinks">
 		    <a href="#news">브랜드</a>
@@ -71,8 +67,7 @@ function myFunction() {
 		<div id = "login">
 			<div id="center"></div>
 				<h1>LOGIN</h1>
-				<br>
-				<input type = "text" id = "uname" name = "uname" required placeholder="ID"/>
+				<input type = "text" id = "uname" name = "uname" required placeholder="ID"style="margin-top:30px;"/>
 				<input type = "password" id = "password" name = "password" required placeholder="PASSWORD"/><br>
 				<input type="submit" value="로그인"/>
 				<br>

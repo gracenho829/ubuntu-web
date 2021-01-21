@@ -1,5 +1,8 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+#headerTitle {
+	color:white;
+}
 h1{
 	font-family: 'Noto Sans KR', sans-serif;
 	font-weight: 300;
@@ -30,6 +33,7 @@ p{
 }
 
 .wrapper{
+	visibility:visible;
 	width: 100%;
 	text-align: center;
 }
@@ -79,4 +83,67 @@ input[type=button]{
 	color:white;
 	font-family: 'Noto Sans KR', sans-serif;
 	font-weight:300;
+}
+
+@media screen and (max-width: 767px) {
+
+	#login {
+		width: 430px;
+		height: 450px;
+		border-radius: 40px;
+		margin-top: 50px;
+		display: inline-block;
+		left:436px;
+	}
+	input[type="text"], input[type="password"]{
+	width: 200px;
+	height:30px;
+	border-radius: 15px;
+	padding-left: 20px;
+	margin-top: 20px;
+	}
+	input[type=submit] {
+	  width: 100px;
+	  height:30px;
+	  border-radius: 20px;
+	  margin-top: 40px;
+	}
+	input[type=button]{
+		width: 60px;
+	  	height:20px;
+	  	background-color: white;
+	  	border: none;
+	 	color: #11A0E2;
+	 	text-decoration: none;
+	  	cursor: pointer;
+	  	border-radius: 10px;
+	  	display:inline-block;
+	  	font-size: 10px;
+	 	
+	}
+	.wrapper{
+		visibility:visible;
+	}
+	
+}
+@media screen and (max-width: 479px) {
+	#login{
+	border:none;
+	background:#0C63F1;
+	margin-top:20px;
+	}
+	
+	input[type=text]{
+		margin-top:40px;
+	}
+	input[type=submit]{
+	color: #0C63F1;
+	}
+	input[type=button]{
+		width: 60px;
+	  	height:20px;
+	 	color: #0C63F1;
+	 	
+	}
+	
 }
