@@ -54,7 +54,25 @@ li:hover{
 }
 .topnav {
 	display:none;
-	}
+}
+.footer {
+	width:100%;
+	height: 130px;
+	background-color: #444;
+	color:white;
+	text-align:center;
+	font-size: 15px;
+	font-weight:300;
+	position:absolute;
+	bottom:0px;
+}
+.footer p{
+	margin-top: 10px;
+	font-size: 13px;
+}
+.footer img{
+	 margin-top:10px;
+	}	
 
 @media screen and (max-width: 767px) {
 	
@@ -87,6 +105,17 @@ li:hover{
 	.header h4{
 	visibility: visible;
 	}
+	.footer {
+	width:100%;
+	font-size: 10px;
+	}
+	.footer p{
+		margin-top: 10px;
+	}
+	.footer img{
+	 margin-top:10px;
+	}	
+	
 }
 
 @media screen and (max-width: 479px) {
@@ -128,6 +157,9 @@ li:hover{
 .topnav a:hover {
   background-color: #ddd;
   color: black;
+}
+.footer img{
+	 margin-top:20px;
 }
 
 }
