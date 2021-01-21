@@ -73,4 +73,10 @@ public class HomeController {
 		return "reserve3";
 	
 	}
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public String login() {
+		
+		return "login";
+	
+	}
 }

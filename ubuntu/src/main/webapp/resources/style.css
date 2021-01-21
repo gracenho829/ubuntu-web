@@ -9,9 +9,9 @@ h1,h2,h3{
 	font-family: 'Noto Sans KR', sans-serif;
 	color: #0C63F1;
 }
-h4{
+#headerTitle{
 		font-family: 'Noto Sans KR', sans-serif;
-		font-size: 30px;
+		font-size: 2vw;
 		
 }
 .header{
@@ -23,6 +23,7 @@ h4{
     margin: 0px;
 }
 .header img{
+	visibility: visible;
 	height: 50px;
 	margin-left: 8vw;
 	margin-right: 50px;
@@ -32,6 +33,8 @@ h4{
 	font-family:'Noto Sans KR', sans-serif;
 	font-size: 15px;
 	margin-right: 8vw;
+	position: absolute;
+	right: 10px;
 }
 
 .header li{
@@ -42,6 +45,89 @@ h4{
 	font-weight:400;
 }
 
+.header h4{
+	visibility: visible;
+}
+
 li:hover{
 	color:#0C63F1;
+}
+.topnav {
+	display:none;
+	}
+
+@media screen and (max-width: 767px) {
+	
+/* start of medium tablet styles */
+	.header ul{
+		font-family:'Noto Sans KR', sans-serif;
+		font-size: 10px;
+		margin-right: 5vw;
+		position: absolute;
+		right: 2vw;
+	}
+	
+	.header li{
+		display: inline;
+		list-style-type:none;
+		font-size: 10px;
+		margin-right: 20px;
+		font-weight:400;
+	}
+	
+	#headerTitle{
+		font-size: 20px;
+	}
+	.topnav {
+	display:none;
+	}
+	.header img{
+	visibility: visible;
+	}
+	.header h4{
+	visibility: visible;
+	}
+}
+
+@media screen and (max-width: 479px) {
+/* start of phone styles */
+	.header ul{
+	display:none;
+	}
+	
+	.topnav {
+	display:block;
+	padding-top:0px;
+	margin:0px;
+	  position: absolute;
+	  background-color:#fff;
+	  right: 5vw;
+	  top: 25px;
+}
+
+.topnav #myLinks {
+  display: none;
+  width:   30vw;
+}
+
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+}
+
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 }
