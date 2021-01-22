@@ -21,7 +21,7 @@ function myFunction() {
 </head>
 <body>
 	<div class = "header">
-		<img src = "resources/img/logo.jpg"/>
+		<a href='home'><img src = "resources/img/logo.jpg"/></a>
 		<h4 id="headerTitle">주문하기</h4>
 		<ul>
 			<li>브랜드</li>
