@@ -37,7 +37,7 @@ function myFunction() {
 <body>
 <!-- --------------Header--------------  -->
 	<div class = "header">
-		<img src = "resources/img/logo.jpg"/>
+		<a href='home'><img src = "resources/img/logo.jpg"/></a>
 		<ul>
 			<li>브랜드</li>
 			<li>예약하기</li>

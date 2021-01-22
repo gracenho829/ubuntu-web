@@ -23,7 +23,7 @@ function myFunction() {
 <body>
 <!-- --------------Header--------------  -->
 	<div class = "header">
-		<img src = "resources/img/logo.jpg"/>
+		<a href='home'><img src = "resources/img/logo.jpg"/></a>
 		<ul>
 			<li>브랜드</li>
 			<li>예약하기</li>
@@ -73,13 +73,13 @@ function myFunction() {
 					<label for = "address">주소</label><br>
 					<input type = "text" id = "postal" name = "postal" required placeholder="우편번호" />
 					<input type="button" id="postalCode" value="우편번호 찾기" onclick="DaumPostcode()"/>
+					<div id="wrap" style="display:none;border:1px solid;width:350px;height:auto;margin:5px 0;position:relative">
+					<img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnFoldWrap" style="cursor:pointer;position:absolute;right:0px;top:-1px;z-index:1" onclick="foldDaumPostcode()" alt="접기 버튼">
+					</div>
 					<br>
 					<input type = "text" id = "address1" name = "address1" required placeholder="주소" style="border-radius: 10px;"/><br>
 					<input type = "text" id = "address2" name = "address2" required placeholder="상세주소를 입력하세요"  style="border-radius: 10px;"/><br>
 					
-					<div id="wrap" style="display:none;border:1px solid;width:500px;height:300px;margin:5px 0;position:relative">
-					<img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnFoldWrap" style="cursor:pointer;position:absolute;right:0px;top:-1px;z-index:1" onclick="foldDaumPostcode()" alt="접기 버튼">
-					</div>
 					<input type="submit" value="가입하기"/>
 				
 				<!-- -------------- 주소 api script 시작 --------------  -->
@@ -123,15 +123,8 @@ function myFunction() {
 					                    if(data.buildingName !== '' && data.apartment === 'Y'){
 					                        extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
 					                    }
-					                    // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
-					                    if(extraAddr !== ''){
-					                        extraAddr = ' (' + extraAddr + ')';
-					                    }
-					                    // 조합된 참고항목을 해당 필드에 넣는다.
-					                    document.getElementById("sample3_extraAddress").value = extraAddr;
-					                
+					                    // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다
 					                } else {
-					                    document.getElementById("sample3_extraAddress").value = '';
 					                }
 									
 					                // 우편번호와 주소 정보를 해당 필드에 넣는다.

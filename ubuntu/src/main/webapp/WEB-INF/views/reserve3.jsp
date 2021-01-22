@@ -16,11 +16,12 @@ function myFunction() {
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="resources/style.css">
+<link rel = "stylesheet" type = "text/css" href="resources/reserve3.css">
 <title>주문하기3</title>
 </head>
 <body>
 	<div class = "header">
-		<img src = "resources/img/logo.jpg"/>
+		<a href='home'><img src = "resources/img/logo.jpg"/></a>
 		<h4 id="headerTitle">주문하기</h4>
 		<ul>
 			<li>브랜드</li>
@@ -59,6 +60,42 @@ function myFunction() {
 	
 		</div>
 	<hr>
+<!-- ------------- 예약 내역 -------------  -->
+    <div class="wapper">
+        <div id = "reserve_complete">
+            <div id = "top">
+                예약이 완료되었습니다
+            </div>
+            <div id = "left">
+                <div id = "reserve_content">
+                    <label class = "title_label" for="reserve_date_title">예약 일자</label><br />
+                    <label class = "data_lable" for="reserve_date_date">1월 14일 2020년  [ 오전 9:30 ]</label><br />
+
+                    <label class = "title_label" for="phone_title">연락처</label><br />
+                    <label class = "data_lable" for="phone_data">010-0000-0000</label><br />
+
+                    <label class = "title_label" for="address_title">주소</label><br />
+                    <label class = "data_lable" for="address_data">대전광역시  xxx로, xxx 아파트 101동 1104호</label><br />
+                </div>
+                <div id = "pay">
+                    <p>총 금액</p>
+                    <p>$49.00</p>
+                </div>
+            </div>
+
+            <div id = "vertical_line"></div>
+            
+            <div id = "right">
+                <img id = "staff_img"src="resources/img/staff1.png" alt="담당 직원 사진">
+                <label id = "staff_name" for="staff_name">임체리</label><br />
+                <label id = "staff_area"for="staff_area">대전 서구</label>
+            </div>
+            <div id = "buttom">
+                <button>예약 내역 보기</button>
+                <button>홈으로</button>
+            </div>
+        </div>
+    </div>
 <!-- -------------- Footer --------------  -->
 	<div class = "footer">
 		<img src = "resources/img/logo_white.png" style ="height:30px;">
