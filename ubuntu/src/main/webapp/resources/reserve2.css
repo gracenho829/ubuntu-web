@@ -1,0 +1,157 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+	.blue{
+		background-color: #40B7EE; 
+		border:none; 
+		height:3px; 
+	
+	}
+	.time{
+		display:inline-block;
+		background-color: #40B7EE; 
+		border:none; 
+		border-radius:20px;
+		width: 200px;
+		height:50px;
+		color:white;
+		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+		font-size: 15px;
+		margin-top: 50px;
+	}
+	
+	.footer{
+		display:none;
+	}
+	
+	.center{
+		text-align:center;
+	}
+	
+	#date, #address, #orders{
+		width: 80vw;
+		margin: 50px auto;
+	}
+	
+	#calendar{
+		margin-top:20px;
+		margin-left: 50px;
+		background-color:lightgray;
+		border:none;
+		width: 400px;
+		height:400px;
+		float:left;
+	}
+	
+	#postal{
+		width: 250px;
+		margin-top: 20px;
+		margin-right: 20px;
+		border:1px solid lightgray;
+		border-radius:8px;
+		height:30px;
+	}
+	#postalCode{
+		width: 130px;
+		border-radius:10px;
+		height:33px;
+		margin-top: 20px;
+		border: none;
+		background-color:#40B7EE; 
+		color: white;
+		border-radius:8px;
+	}
+	#address1, #address2{
+		margin: 20px auto auto auto;
+		width: 400px;
+		border:1px solid lightgray;
+		border-radius:8px;
+		height: 30px;
+	}
+	
+	h2{
+		color: #40B7EE; 
+		font-size: 40px;
+		font-weight:500;
+	}
+	
+	#timeButtons{
+		margin-top: 90px;
+		width: 300px;
+		height: 250px;
+		background-color:white;
+		border:none;
+		border-radius:20px;
+		box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.25);
+		text-align:center;
+		display:inline-block;
+	}
+	
+	input[type="button"]:hover{
+		cursor:pointer;
+	}
+	
+	
+
+
+
+@media (max-width: 767px) {
+	#postal{
+		width: 200px;
+		margin-top: 20px;
+		margin-right: 20px;
+		border:1px solid lightgray;
+		border-radius:7px;
+		height:30px;
+	}
+	#postalCode{
+		width: 100px;
+		border-radius:10px;
+		height:33px;
+		margin-top: 20px;
+		border: none;
+		background-color:#40B7EE; 
+		color: white;
+		border-radius:7px;
+	}
+	#address1, #address2{
+		margin: 20px auto auto auto;
+		width: 330px;
+		border:1px solid lightgray;
+		height: 30px;
+	}
+}
+
+
+
+@media (max-width: 479px) {
+	#postal{
+		width: 160px;
+		margin-top: 20px;
+		margin-right: 20px;
+		border:1px solid lightgray;
+		border-radius:7px;
+		height:30px;
+	}
+	#postalCode{
+		width: 100px;
+		border-radius:10px;
+		height:33px;
+		margin-top: 20px;
+		border: none;
+		background-color:#40B7EE; 
+		color: white;
+		border-radius:7px;
+	}
+	#address1, #address2{
+		margin: 20px auto auto auto;
+		width: 280px;
+		border:1px solid lightgray;
+		height: 30px;
+	}
+	
+	h2{
+		margin-bottom:15px;
+		font-size:30px;
+	}
+	
+}
