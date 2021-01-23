@@ -27,13 +27,6 @@ public class HomeController {
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
 		
-		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-		
-		String formattedDate = dateFormat.format(date);
-		
-		model.addAttribute("serverTime", formattedDate );
-		
 		return "home";
 	}
 	@RequestMapping(value = "/orders", method = RequestMethod.GET)
@@ -71,12 +64,6 @@ public class HomeController {
 	public String reserve3() {
 		
 		return "reserve3";
-	
-	}
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public String login() {
-		
-		return "login";
 	
 	}
 	@RequestMapping(value = "/register", method = RequestMethod.GET)

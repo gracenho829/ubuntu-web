@@ -22,11 +22,17 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
+	<context:component-scan base-package="com.company.login" />
+	<context:component-scan base-package="com.company.member" />
+	<context:component-scan base-package="com.company.partner" />
+	<context:component-scan base-package="com.company.product" />
+	<context:component-scan base-package="com.company.reservation" />
 	<context:component-scan base-package="com.company.ubuntu" />
 
-	<!--
-	<beans:bean id="LoginCheckInterceptor" class="com.company.ubuntu.LoginInterceptor"></beans:bean>
 	
+	<beans:bean id="LoginCheckInterceptor" class="com.company.login.LoginInterceptor"></beans:bean>
+	
+	<!-- 
 		<interceptors>
 			<interceptor>
 				<mapping path="/**"/>

@@ -52,10 +52,11 @@ function myFunction() {
 			<div id="center" style="margin-top: 30px;">
 				<h1>SIGN UP</h1>
 					<div id="left">
+				<form action="member/addok" method="POST">
 					<label for = "name">이름</label><br>
-					<input type = "text" id = "name" name = "name" required placeholder="실명을 입력하세요"  style="border-radius: 10px;"/><br><br>
+					<input type = "text" id = "name" name = "membername" required placeholder="실명을 입력하세요"  style="border-radius: 10px;"/><br><br>
 					<label for = "uname">아이디</label><br>
-					<input type = "text" id = "uname" name = "uname" required placeholder="아이디"  style="border-radius: 10px;"/><br><br>
+					<input type = "text" id = "uname" name = "memberid" required placeholder="아이디"  style="border-radius: 10px;"/><br><br>
 					<label for = "password">비밀번호</label><br>
 					<input type = "password" id = "password" name = "password" required placeholder="비밀번호를 입력하세요"  style="border-radius: 10px;"/><br><br>
 					<label for = "password2">비밀번호 확인</label><br>
@@ -64,7 +65,7 @@ function myFunction() {
 					
 					<div id = "right">
 					<label for = "tel">휴대폰 번호</label><br>
-					<input type = "tel" id = "tel" name = "tel" required placeholder="휴대폰 번호를 입력하세요"  style="border-radius: 10px;"/><br><br>
+					<input type = "tel" id = "tel" name = "phone" required placeholder="휴대폰 번호를 입력하세요"  style="border-radius: 10px;"/><br><br>
 					<label for = "email">이메일</label><br>
 					<input type = "email" id = "email" name = "email" required placeholder="이메일 주소를 입력하세요"  style="border-radius: 10px;"/><br><br>
 					
@@ -75,12 +76,13 @@ function myFunction() {
 					<div id="wrap" style="display:none;border:1px solid;width:350px;height:auto;margin:5px 0;position:relative">
 					<img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnFoldWrap" style="cursor:pointer;position:absolute;right:0px;top:-1px;z-index:1" onclick="foldDaumPostcode()" alt="접기 버튼">
 					</div>
+		
 					<br>
 					<input type = "text" id = "address1" name = "address1" required placeholder="주소" style="border-radius: 10px;"/><br>
 					<input type = "text" id = "address2" name = "address2" required placeholder="상세주소를 입력하세요"  style="border-radius: 10px;"/><br>
-					
+					<input type = "text" id = "address" name = "address"  style="display: none;">
 					<input type="submit" value="가입하기"/>
-				
+				</form>
 				<!-- -------------- 주소 api script 시작 --------------  -->
 					<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 					<script>
@@ -131,6 +133,9 @@ function myFunction() {
 					                document.getElementById("address1").value = addr;
 					                // 커서를 상세주소 필드로 이동한다.
 					                document.getElementById("address2").focus();
+
+					                document.getElementById("address").value = data.zonecode + " " + addr + " " + extraAddr;
+					                System.out.println(document.getElementById("address").value);
 					
 					                // iframe을 넣은 element를 안보이게 한다.
 					                // (autoClose:false 기능을 이용한다면, 아래 코드를 제거해야 화면에서 사라지지 않는다.)
@@ -152,6 +157,8 @@ function myFunction() {
 					    }
 					</script>
 				<!-- -------------- 주소 api script 끝 --------------  -->
+				
+				
 				</div>
 			</div>
 				

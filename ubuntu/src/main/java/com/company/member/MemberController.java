@@ -31,7 +31,7 @@ public class MemberController {
 			System.out.println("데이터 추가 실패 ");
 		else
 			System.out.println("데이터 추가 성공!!!");
-		return "redirect:list";
+		return "redirect:/login/loginpage";
 	}
 	
 	@RequestMapping(value = "/editform/{id}", method = RequestMethod.GET)
