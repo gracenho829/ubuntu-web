@@ -8,9 +8,9 @@
 	</select>
 	
 	<insert id="insertMember">
-		insert into MEMBER (memberid, membername, password, email)
+		insert into MEMBER (memberid, membername, password, email, phone, address)
 		value
-		(#{memberid}, #{membername}, #{password}, #{email})
+		(#{memberid}, #{membername}, #{password}, #{email}, #{phone}, #{address})
 	</insert>
 	<update id="updateMember">
 		update MEMBER

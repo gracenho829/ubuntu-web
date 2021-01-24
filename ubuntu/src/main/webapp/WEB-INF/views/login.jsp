@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>로그인</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="resources/style.css">
-<link rel = "stylesheet" type = "text/css" href="resources/login.css">
+<link rel="stylesheet" type="text/css" href="../resources/style.css">
+<link rel = "stylesheet" type = "text/css" href="../resources/login.css">
 
 <style>
 	@media screen and (max-width: 479px) {
@@ -37,7 +37,7 @@ function myFunction() {
 <body>
 <!-- --------------Header--------------  -->
 	<div class = "header">
-		<a href='home'><img src = "resources/img/logo.jpg"/></a>
+		<a href="../home"><img src = "../resources/img/logo.jpg"/></a>
 		<ul>
 			<li>브랜드</li>
 			<li>예약하기</li>
@@ -67,12 +67,14 @@ function myFunction() {
 		<div id = "login">
 			<div id="center"></div>
 				<h1>LOGIN</h1>
-				<input type = "text" id = "uname" name = "uname" required placeholder="ID"style="margin-top:30px;"/>
+				<form action="loginOk" method="POST">
+				<input type = "text" id = "uname" name = "memberid" required placeholder="ID"style="margin-top:30px;"/>
 				<input type = "password" id = "password" name = "password" required placeholder="PASSWORD" style="margin-top: 20px;"/><br>
 				<input type="submit" value="로그인"/>
 				<br>
+				</form>
 				<div id = "register">
-				<p>아직 회원이 아니시라면?</p><input type="button" value="회원가입" onclick = "location.href='register'"/>
+				<p>아직 회원이 아니시라면?</p><input type="button" value="회원가입" onclick = "location.href='../register'"/>
 			</div>
 		</div>
 	</div>

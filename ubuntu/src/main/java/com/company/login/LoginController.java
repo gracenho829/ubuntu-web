@@ -19,8 +19,10 @@ public class LoginController {
 	@Autowired
 	MemberService memberservice;
 	
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	
+	@RequestMapping(value = "/loginpage", method = RequestMethod.GET)
 	public String login(String t, Model model) {
+		System.out.println("로그인페이지!");
 		return "login";
 	}
 	
@@ -34,15 +36,15 @@ public class LoginController {
 		MemberVO loginvo = memberservice.getMember_login(vo);
 		
 		if(loginvo != null) {
-			//System.out.println(loginvo.getUserid());
-			//System.out.println(loginvo.getUsername());
+			System.out.println(loginvo.getMemberid());
+			System.out.println(loginvo.getPassword());
 			//System.out.println(loginvo.getPassword());
 			System.out.println("로그인 성공!");
 			session.setAttribute("login", loginvo);
-			returnURL = "redirect:/product/list";
+			returnURL = "redirect:/home";
 		}else {
 			System.out.println("로그인 실패!");
-			returnURL = "redirect:/login/login";
+			returnURL = "redirect:/login/loginpage";
 		}
 		return returnURL;
 	}
