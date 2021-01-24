@@ -161,11 +161,58 @@ function myFunction() {
 		<hr class="blue">
 		<div id="left">
 			<div class = "order">
-				<h4>화장실 싱크</h4>
-				<p>부설명</p>
+				<div class = "info">
+					<h4>화장실 싱크</h4>
+					<p>부설명</p>
+				</div>
+			</div>
+			
+			<div class = "order">
+				<div class = "info">
+					<h4>화장실 싱크</h4>
+					<p>부설명</p>
+				</div>
+			</div>
+			
+			<div class = "order">
+				<div class = "info">
+					<h4>화장실 싱크</h4>
+					<p>부설명</p>
+				</div>
+			</div>
+			
+			<div class = "order">
+				<div class = "info">
+					<h4>화장실 싱크</h4>
+					<p>부설명</p>
+				</div>
+			</div>
+			
+			<div class = "order">
+				<div class = "info">
+					<h4>화장실 싱크</h4>
+					<p>부설명</p>
+				</div>
+			</div>
+			
+			<div class = "order">
+				<div class = "info">
+					<h4>화장실 싱크</h4>
+					<p>부설명</p>
+				</div>
 			</div>
 		</div>
-		<div id ="right"></div>
+		
+		
+		<div id ="right">
+			<div id = "total">
+				<h3>내 주문</h3>
+				<h4>총 금액</h4>
+				<h2>$49.00</h2>
+			</div>
+			<!--  일단 타입 버튼으로 해놨는데 난중에 type submit 으로 꿔도 될 것 같아 -->
+			<input type="button" class ="orderButton" name="order" value="주문하기" /> 
+		</div>
 	</div>
 	
 	

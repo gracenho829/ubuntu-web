@@ -86,11 +86,90 @@
 		display:inline-block;
 	}
 	
+	h4, p{
+		font-family: 'Noto Sans KR', sans-serif;
+	}
+	h4{
+	
+		font-weight: 700;
+		font-size:15px;
+	}
+	p{
+		margin-top:10px;
+		font-weight:300;
+		font-size:12px;
+	}
+	.order{
+		padding-top: 20px;
+		margin-left: 30px;
+		margin-top: 10px;
+		width: 80%;
+		height: 120px;
+		box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.25);
+		border-radius:20px;
+		
+		
+	}
+	#orders{
+		margin-top: 40px;
+	}
+	.info{
+		margin-left: 20px;
+	}
+	
+	#left{
+		width: 50%;
+		float: left;
+		overflow-y:auto;
+		height: 700px;
+	}
+	#right{
+	display:inline-block;
+	width: 45%;
+	}
+	#total{
+		margin-top: 50px;
+		width: 80%;
+		height: 240px;
+		background-color: #40B7EE; 
+		color:white;
+		border-radius: 40px;
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-top: 10px;
+	}
+	#total h3{
+		color: white;
+		font-size: 30px;
+	}
+	#total h4{
+		font-size: 25px;
+		margin-left: 30px;
+		font-weight: 400;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+
+	#total h2{
+		float:right;
+		color:white;
+		margin-top:0px;
+
+	}
 	input[type="button"]:hover{
 		cursor:pointer;
 	}
 	
+	.orderButton {
 	
+		margin-top: 50px;
+		width: 100%;
+		border:2px solid #40B7EE;
+		border-radius:20px;
+		height: 50px;
+		background-color:white;
+		font-size: 15px;
+	}
 
 
 
