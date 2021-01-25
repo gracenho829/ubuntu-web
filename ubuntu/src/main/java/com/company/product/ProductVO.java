@@ -5,14 +5,10 @@ import java.util.Date;
 public class ProductVO {
 	private int seq;
 	private String product;
+	private String price;
 	private String photo;
 	private String detail;
-	private String review;
-	private String discount;
-	private String price;
-	private String delivery;
 	private Date regdate;
-	
 	public int getSeq() {
 		return seq;
 	}
@@ -25,6 +21,12 @@ public class ProductVO {
 	public void setProduct(String product) {
 		this.product = product;
 	}
+	public String getPrice() {
+		return price;
+	}
+	public void setPrice(String price) {
+		this.price = price;
+	}
 	public String getPhoto() {
 		return photo;
 	}
@@ -36,30 +38,6 @@ public class ProductVO {
 	}
 	public void setDetail(String detail) {
 		this.detail = detail;
-	}
-	public String getReview() {
-		return review;
-	}
-	public void setReview(String review) {
-		this.review = review;
-	}
-	public String getDiscount() {
-		return discount;
-	}
-	public void setDiscount(String discount) {
-		this.discount = discount;
-	}
-	public String getPrice() {
-		return price;
-	}
-	public void setPrice(String price) {
-		this.price = price;
-	}
-	public String getDelivery() {
-		return delivery;
-	}
-	public void setDelivery(String delivery) {
-		this.delivery = delivery;
 	}
 	public Date getRegdate() {
 		return regdate;
