@@ -92,7 +92,7 @@ function myFunction() {
             </div>
             <div id = "buttom">
                 <button>예약 내역 보기</button>
-                <button>홈으로</button>
+                <button type="button" onclick=" location.href='home' ">홈으로</button>
             </div>
         </div>
     </div>

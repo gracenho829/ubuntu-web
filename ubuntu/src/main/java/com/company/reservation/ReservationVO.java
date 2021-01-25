@@ -5,6 +5,8 @@ import java.util.Date;
 public class ReservationVO {
 	private int seq;
 	private Date created;
+	
+	private String date;
 	private String product;
 	private String photo;
 	private String detail;
@@ -25,7 +27,62 @@ public class ReservationVO {
 	private int double_window_B_veranda;
 	private int single_window_S_kitchen_dress;
 	
+	private int single_window_M_room;
+	private int single_window_B_living;
+	private int single_window_B_veranda;
+
+	private int room_floor;
+	private int room_drawer;
+	private int room_light;
+	private int room_molding_top;
+	private int room_molding_bottom;
+
+	private int living_floor;
+	private int living_artwall;
+	private int living_molding_top;
+	private int living_molding_bottom;
+	private int living_light;
+
+	private int shoes;
+	private int veranda;
+	private int dress;
+	private int trash;
+
+	private int single;
+	private int super_single;
+	private int double_;
+	private int queen;
+	private int king;
+	private int super_king;
+	private int ultra_king;
+	private int order_production;
+
+	private int membership_one;
+	private int membership_two;
+	private int membership_three;
+
+	private int washcar;
+	private int joint_toilet;
+	private int joint_bathroom_sink;
+	private int joint_door;
+	private int joint_dress;
+	private int joint_;
+	private int disinfect;
+	private int pest;
+	private int rat;
+	private int disinfect_and_pest;
+
+	private int house_new;
+	private int house_move;
+	private int house_live;
+
 	
+	public String getDate() {
+		return date;
+	}
+	public void setDate(String date) {
+		this.date = date;
+	}
 	public int getSeq() {
 		return seq;
 	}
@@ -386,52 +443,4 @@ public class ReservationVO {
 	public void setHouse_live(int house_live) {
 		this.house_live = house_live;
 	}
-	private int single_window_M_room;
-	private int single_window_B_living;
-	private int single_window_B_veranda;
-
-	private int room_floor;
-	private int room_drawer;
-	private int room_light;
-	private int room_molding_top;
-	private int room_molding_bottom;
-
-	private int living_floor;
-	private int living_artwall;
-	private int living_molding_top;
-	private int living_molding_bottom;
-	private int living_light;
-
-	private int shoes;
-	private int veranda;
-	private int dress;
-	private int trash;
-
-	private int single;
-	private int super_single;
-	private int double_;
-	private int queen;
-	private int king;
-	private int super_king;
-	private int ultra_king;
-	private int order_production;
-
-	private int membership_one;
-	private int membership_two;
-	private int membership_three;
-
-	private int washcar;
-	private int joint_toilet;
-	private int joint_bathroom_sink;
-	private int joint_door;
-	private int joint_dress;
-	private int joint_;
-	private int disinfect;
-	private int pest;
-	private int rat;
-	private int disinfect_and_pest;
-
-	private int house_new;
-	private int house_move;
-	private int house_live;
 }
