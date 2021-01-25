@@ -26,5 +26,7 @@
 <a href="reserve3">Reserve3.jsp</a> <br><br>
 <a href="login/loginpage">Login</a>
 <a href="register">Register</a>
+<a href="main">Main</a>
+<a href="intro">Intro</a>
 </body>
 </html>

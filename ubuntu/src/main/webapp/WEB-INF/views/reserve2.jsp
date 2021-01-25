@@ -66,7 +66,7 @@ function myFunction() {
 	<div id = "address">
 		<h2>주소</h2>
 		<hr class="blue">
-		<div class = "center">
+		<div>
 		<!-- -------------- 주소 api --------------  -->
 			<input type = "text" id = "postal" name = "postal" required placeholder="우편번호" />
 			<input type="button" id="postalCode" value="우편번호 찾기" onclick="DaumPostcode()"/>
@@ -75,8 +75,8 @@ function myFunction() {
 				<img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnFoldWrap" style="cursor:pointer;position:absolute;right:0px;top:-1px;z-index:1" onclick="foldDaumPostcode()" alt="접기 버튼">
 			</div>
 			<br>
-			<input type = "text" id = "address1" name = "address1" required placeholder="주소1" style="border-radius: 7px;"/><br>
-			<input type = "text" id = "address2" name = "address2" required placeholder="주소2"  style="border-radius: 7px;"/><br>
+			<input type = "text" id = "address1" name = "address1" required placeholder="주소1" style="border-radius: 15px;"/><br>
+			<input type = "text" id = "address2" name = "address2" required placeholder="주소2"  style="border-radius: 15px;"/><br>
 		</div>
 		<!-- -------------- 주소 api script 시작 --------------  -->
 		<script>
