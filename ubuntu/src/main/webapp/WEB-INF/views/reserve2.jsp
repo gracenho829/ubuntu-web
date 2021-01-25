@@ -23,7 +23,6 @@ function myFunction() {
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
 <script src="resources/pignose.calendar.full.min.js"></script>
-<!--캘린더link/script-->
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
@@ -52,6 +51,7 @@ function myFunction() {
 		    <a href="#about">브랜드샵</a>
 		    <a href="#about">커뮤니티</a>
 		    <a href="#about">로그인</a>
+		    <p id="box"></p>
 		  </div>
 		
 		</div>
@@ -67,8 +67,7 @@ function myFunction() {
 			</div>
 			<div id="timeButtons"><!--오전/오후 -->
 				<input type="button" class = "time" id="morning" name="morning" value="오전"/><br>
-				<input type="button" class = "time" id="afternoon" name="afternoon" value="오후"/>
-				<p class="box"></p>
+				<input type="button" onClick='btnClick()' class = "time" id="afternoon" name="afternoon" value="오후"/>
 			</div>
 		</div>
 	</div>
@@ -77,16 +76,54 @@ function myFunction() {
 	function jbFunction() {
 	    $('.calendar_').pignoseCalendar({
 		    	theme: 'blue', // light, dark, blue
+		    	format: 'YYYY-MM-DD',
 		    	lang: 'ko',
+
+		    	//예약내역 항목이 있면 선택못하도록 하는 부분 
 		    	disabledDates: [
 				'2021-01-01',
 				'2021-01-25',
 				'2021-01-26'
-				]
+				],
+	    /*select: function(date) {
+	           //alert(date[0]);
+	           //document.getElementById("box").value = date;
+	           var element = document.getElementById("box");
+
+	           // 요소의 콘텐츠를 변경합니다.
+	           element.innerText = date[0];
+	           
+	        }*/
+
+	        select: function(date, context) {
+	            /**
+	             * @params this Element
+	             * @params date moment[]
+	             * @params context PignoseCalendarContext
+	             * @returns void
+	             */
+
+	             // This is selected button Element.
+	             var $this = $(this);
+
+	             // You can get target element in `context` variable, This element is same `$(this)`.
+	             var $element = context.element;
+
+	             // You can also get calendar element, It is calendar view DOM.
+	             var $calendar = context.calendar;
+
+	             // Selected dates (start date, end date) is passed at first parameter, And this parameters are moment type.
+	             // If you unselected date, It will be `null`.
+	            // console.log(date[0], date[1]);
+	            // alert($calendar);
+	        }
 		});
 	};
 	jbFunction();
-	clickF();
+
+		function btnClick(){
+			alert("dd");
+		}
 	</script>
 	
 	
