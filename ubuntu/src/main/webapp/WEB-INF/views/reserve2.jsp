@@ -19,10 +19,8 @@ function myFunction() {
 <link rel="stylesheet" type="text/css" href="resources/reserve2.css">
 
 <!--캘린더link/script-->
-<link rel="stylesheet" href="resources/pignose.calendar.min.css">
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
-<script src="resources/pignose.calendar.full.min.js"></script>
+<script src="https://jsuites.net/v3/jsuites.js"></script>
+ <link rel="stylesheet" href="https://jsuites.net/v3/jsuites.css" type="text/css" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
@@ -56,13 +54,15 @@ function myFunction() {
 		</div>
 	</div>
 	<hr>
-	<!-----------------------  날짜 칸  ---------------- -->
+	
+	<!-- 날짜 칸 -->
 	<div id = "date">
 		<h2>날짜</h2>
 		<hr class="blue">
 		<div class = "center" style="margin-top:40px;">
-			<div id = "calendar"> <!-- 캘린더  -->
-				<div class="calendar_"></div>
+			<div> <!-- 캘린더  -->
+				<div id='calendar'></div>
+  				<input id='calendar-value' type="text"><!-- test용 input -->
 			</div>
 			<div id="timeButtons"><!--오전/오후 -->
 				<input type="button" class = "time" id="morning" name="morning" value="오전"/><br>
@@ -71,58 +71,20 @@ function myFunction() {
 		</div>
 	</div>
 	<br><br>
+	
+	<!--  달력 api -->
 	<script>
-	function jbFunction() {
-	    $('.calendar_').pignoseCalendar({
-		    	theme: 'blue', // light, dark, blue
-		    	format: 'YYYY-MM-DD',
-		    	lang: 'ko',
-
-		    	//예약내역 항목이 있면 선택못하도록 하는 부분 
-		    	disabledDates: [
-				'2021-01-01',
-				'2021-01-25',
-				'2021-01-26'
-				],
-	    /*select: function(date) {
-	           //alert(date[0]);
-	           //document.getElementById("box").value = date;
-	           var element = document.getElementById("box");
-
-	           // 요소의 콘텐츠를 변경합니다.
-	           element.innerText = date[0];
-	           
-	        }*/
-
-	        select: function(date, context) {
-	            /**
-	             * @params this Element
-	             * @params date moment[]
-	             * @params context PignoseCalendarContext
-	             * @returns void
-	             */
-
-	             // This is selected button Element.
-	             var $this = $(this);
-
-	             // You can get target element in `context` variable, This element is same `$(this)`.
-	             var $element = context.element;
-
-	             // You can also get calendar element, It is calendar view DOM.
-	             var $calendar = context.calendar;
-
-	             // Selected dates (start date, end date) is passed at first parameter, And this parameters are moment type.
-	             // If you unselected date, It will be `null`.
-	            // console.log(date[0], date[1]);
-	            // alert($calendar);
-	        }
-		});
-	};
-	jbFunction();
-
-		function btnClick(){
-			alert("dd");
-		}
+	    jSuites.calendar(document.getElementById('calendar'), {
+	      format: 'YYYY-MM-DD',
+	      weekdays_short: ['일', '월', '화', '수', '목', '금', '토'],
+	      months:['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+	      monthsFull: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+	      weekdays:['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'],
+	      onupdate: function(a,b) {
+	        var text = b.substring(0,10);
+	          document.getElementById('calendar-value').value = text; 
+	      }
+	    });
 	</script>
 	
 	

@@ -37,15 +37,9 @@
 	#calendar{
 		margin-top:20px;
 		margin-left: 50px;
-		background-color:lightgray;
-		border:none;
 		width: 400px;
-		height:400px;
+      	height: auto;
 		float:left;
-	}
-	
-	#calendar_{
-		height:auto;
 	}
 	
 	#postal{
