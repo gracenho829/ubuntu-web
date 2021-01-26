@@ -25,13 +25,13 @@ function myFunction() {
 	<!-- -------------- Header --------------  -->
 	<div class = "header">
 	<a href='home'><img src = "resources/img/logo.jpg"/></a>
-	<h4 id="headerTitle">주문내역</h4>
+	<h4 id="headerTitle">주문하기</h4>
 	<ul>
-		<li>브랜드</li>
-		<li>예약하기</li>
-		<li>브랜드샵</li>
-		<li>커뮤니티</li>
-		<li style="margin-right: 0px;">로그인</li>
+		<a href='intro'><li>브랜드</li></a>
+			<a href='reserve1'><li>예약하기</li></a>
+			<a href='order'><li>브랜드샵</li></a>
+			<a href='com'><li>커뮤니티</li></a>
+			<a href='login/loginpage'><li style="margin-right: 0px;">로그인</li></a>
 	</ul>
 	
 		<!-- Top Navigation Menu -->
@@ -40,11 +40,11 @@ function myFunction() {
 		    <i class="fa fa-bars"></i>
 		  </a>
 		  <div id="myLinks">
-		    <a href="#news">브랜드</a>
-		    <a href="#contact">예약하기</a>
-		    <a href="#about">브랜드샵</a>
-		    <a href="#about">커뮤니티</a>
-		    <a href="#about">로그인</a>
+		    <a href='intro'>브랜드</a>
+		    <a href='reserve1'>예약하기</a>
+		    <a href='order'>브랜드샵</a>
+		    <a href='com'>커뮤니티</a>
+		    <a href='login/loginpage'>로그인</a>
 		  </div>
 		
 		</div>
