@@ -29,7 +29,13 @@ public class HomeController {
 		
 		return "home";
 	}
-	@RequestMapping(value = "/orders", method = RequestMethod.GET)
+	@RequestMapping(value = "/intro", method = RequestMethod.GET)
+	public String intro() {
+		
+		return "intro";
+	
+	}
+	@RequestMapping(value = "/order", method = RequestMethod.GET)
 	public String checkOrders() {
 		
 		return "orders";
@@ -72,22 +78,5 @@ public class HomeController {
 		return "register";
 	
 	}
-	
-	@RequestMapping(value = "/main", method = RequestMethod.GET)
-	public String main() {
-		
-		return "main";
-	
-	}
-	
-	@RequestMapping(value = "/intro", method = RequestMethod.GET)
-	public String intro() {
-		
-		return "intro";
-	
-	}
-	
-	
-	
 	
 }
