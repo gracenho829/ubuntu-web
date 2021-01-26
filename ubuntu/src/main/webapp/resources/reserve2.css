@@ -26,8 +26,12 @@
 	.center{
 		text-align:center;
 	}
-	
-	#date, #address, #orders{
+	#date{
+		width: 80vw;
+		margin: 50px auto;
+		height: 600px;
+	}
+	#address, #orders{
 		width: 80vw;
 		margin: 50px auto;
 		height: 500px;
@@ -36,7 +40,7 @@
 
 	#calendar{
 		margin-top:20px;
-		margin-left: 50px;
+		margin-left: 30px;
 		background-color:lightgray;
 		border:none;
 		width: 400px;
@@ -44,10 +48,13 @@
 		float:left;
 	}
 	
-	#calendar_{
-		height:auto;
+	.calendar_{
+		height: 500px;
+		width: 400px;
 	}
-	
+	.pignose-calendar.pignose-calendar-blue{
+		height: 520px;
+	}
 	#postal{
 		width: 300px;
 		margin-top: 50px;
@@ -82,7 +89,8 @@
 	}
 	
 	#timeButtons{
-		margin-top: 90px;
+		margin-top: 140px;
+		margin-left: 20px;
 		width: 300px;
 		height: 250px;
 		background-color:white;
@@ -199,7 +207,8 @@
 	}
 	#calendar{
 		margin-top:20px;
-		margin-left: 30px;
+		margin-left: 20px;
+		margin-right: 30px;
 		background-color:lightgray;
 		border:none;
 		width: 250px;

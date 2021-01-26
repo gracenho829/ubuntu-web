@@ -16,10 +16,11 @@ function myFunction() {
 <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="resources/style.css">
-<link rel="stylesheet" type="text/css" href="resources/reserve2.css">
+
 
 <!--캘린더link/script-->
 <link rel="stylesheet" href="resources/pignose.calendar.min.css">
+<link rel="stylesheet" type="text/css" href="resources/reserve2.css">
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
 <script src="resources/pignose.calendar.full.min.js"></script>
@@ -61,7 +62,7 @@ function myFunction() {
 	<div id = "date">
 		<h2>날짜</h2>
 		<hr class="blue">
-		<div class = "center" style="margin-top:40px;">
+		<div class = "center" style="margin-top:30px;">
 			<div id = "calendar"> <!-- 캘린더  -->
 				<div class="calendar_"></div>
 			</div>
