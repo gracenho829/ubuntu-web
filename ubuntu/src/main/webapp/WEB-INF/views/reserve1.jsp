@@ -182,6 +182,14 @@ visibility:hidden;
 				<div id="flush-collapseTwo-bk" class="accordion-collapse collapse"
 					aria-labelledby="flush-headingTwo-bk"
 					data-bs-parent="#accordionFlushExample-bk">
+					<div class="accordion-body">
+						<div class="d-grid gap-2 form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons">
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">화장실<span id="money">33,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+						</div>
+						<div class="form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons"> </div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -413,7 +421,11 @@ visibility:hidden;
 					aria-labelledby="flush-headingOne-everything"
 					data-bs-parent="#accordionFlushExample-everything">
 					<div class="accordion-body">
-						
+							<div class="d-grid gap-2 form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons">
+									<label class="btn btn-primary">
+									  <input type="checkbox" class="form-check list-group-item">One room<span id="money">(+120,000)</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+									</label>
+								</div>
 							<h6>(이중창) 중형  -  room 7000<br>화장실  -  33,000<br>  몰딩상  -  2,000<br>  몰딩하  -  2000 <br>  전등  -  1,000
 							<br>  바닥  -  20,000<br>부엌  -  50,000<br>  서랍장 (Drawers)  -  (room)8000 & (kitchen)8000<br>  쓰레기 처리 (재활용, 음식물, 등)  -  10,000 (75L 기준)</h6>
 					</div>
@@ -431,6 +443,11 @@ visibility:hidden;
 							aria-labelledby="flush-headingTwo-everything"
 							data-bs-parent="#accordionFlushExample-everything">
 							<div class="accordion-body">
+								<div class="d-grid gap-2 form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons">
+									<label class="btn btn-primary">
+									  <input type="checkbox" class="form-check list-group-item">Two room<span id="money">(+152,000)</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+									</label>
+								</div>
 								<h6>(이중창) 중형  -  room 7000<br>화장실  -  33,000<br>  몰딩상  -  2,000<br>  몰딩하  -  2000 <br>  전등  -  1,000
 								<br>  바닥  -  20,000<br>부엌  -  50,000<br>  서랍장 (Drawers)  -  (room)8000 & (kitchen)8000<br>  쓰레기 처리 (재활용, 음식물, 등)  -  10,000 (75L 기준)</h6>
 								<hr style="width:80%;">
@@ -451,7 +468,11 @@ visibility:hidden;
 							aria-labelledby="flush-headingThree-everything"
 							data-bs-parent="#accordionFlushExample-everything">
 							<div class="accordion-body">
-								
+								<div class="d-grid gap-2 form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons">
+									<label class="btn btn-primary">
+									  <input type="checkbox" class="form-check list-group-item">Three room<span id="money">(+316,000)</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+									</label>
+								</div>
 								<h6>화장실2 / 거실1  /  룸3  /  부엌  /  서랍장3  /  베란다  /  드레스룸 </h6>
 							</div>
 						</div>
@@ -468,7 +489,11 @@ visibility:hidden;
 							aria-labelledby="flush-headingFour-everything"
 							data-bs-parent="#accordionFlushExample-everything">
 							<div class="accordion-body">
-								
+								<div class="d-grid gap-2 form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons">
+									<label class="btn btn-primary">
+									  <input type="checkbox" class="form-check list-group-item">One room (멤버쉽)<span id="money">(+80,000)</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+									</label>
+								</div>
 								<h6>(이중창) 중형  -  room 7000<br>화장실  -  33,000<br>  몰딩상  -  2,000<br>  몰딩하  -  2000 <br>  전등  -  1,000
 								<br>  바닥  -  20,000<br>부엌  -  50,000<br>  서랍장 (Drawers)  -  (room)8000 & (kitchen)8000<br>  쓰레기 처리 (재활용, 음식물, 등)  -  10,000 (75L 기준)</h6>
 					
@@ -487,7 +512,11 @@ visibility:hidden;
 							aria-labelledby="flush-headingFive-everything"
 							data-bs-parent="#accordionFlushExample-everything">
 							<div class="accordion-body">
-								
+								<div class="d-grid gap-2 form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons">
+									<label class="btn btn-primary">
+									  <input type="checkbox" class="form-check list-group-item">Two room (멤버쉽)<span id="money">(+115,000)</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+									</label>
+								</div>
 								<h6>(이중창) 중형  -  room 7000<br>화장실  -  33,000<br>  몰딩상  -  2,000<br>  몰딩하  -  2000 <br>  전등  -  1,000
 								<br>  바닥  -  20,000<br>부엌  -  50,000<br>  서랍장 (Drawers)  -  (room)8000 & (kitchen)8000<br>  쓰레기 처리 (재활용, 음식물, 등)  -  10,000 (75L 기준)</h6>
 								<hr style="width:80%;">
@@ -507,7 +536,11 @@ visibility:hidden;
 							aria-labelledby="flush-headingSix-everything"
 							data-bs-parent="#accordionFlushExample-everything">
 							<div class="accordion-body">
-								
+								<div class="d-grid gap-2 form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons">
+									<label class="btn btn-primary">
+									  <input type="checkbox" class="form-check list-group-item">Three room (멤버쉽)<span id="money">(+280,000)</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+									</label>
+								</div>
 								<h6>화장실2 / 거실1  /  룸3  /  부엌  /  서랍장3  /  베란다  /  드레스룸 </h6>
 							</div>
 						</div>
@@ -600,7 +633,12 @@ visibility:hidden;
 							  <input type="checkbox" class="form-check list-group-item">멤버쉽제 운영 전염병 + 예방소독 + 병충해 박멸<span id="money">50,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
 							
-							<div style="margin-left:20px;">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div style="margin-left:20px;">
 								<br>
 								<div class="form-check form-check-inline">
 									<input class="form-check-input" type="checkbox"
@@ -619,10 +657,6 @@ visibility:hidden;
 										이사 + 30,000</label>
 								</div>
 							</div>
-						</div>
-					</div>
-			</div>
-			</div>
 		</div>
 		</div>
 		<!--  Special Service  -->		

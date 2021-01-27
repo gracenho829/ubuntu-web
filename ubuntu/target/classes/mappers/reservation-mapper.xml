@@ -6,7 +6,7 @@
 								double_window_B_living, double_window_B_veranda, single_window_S_kitchen_dress, single_window_M_room, 
 								single_window_B_living, single_window_B_veranda, room_floor, room_drawer, room_light, room_molding_top, 
 								room_molding_bottom, living_floor, living_artwall, living_molding_top, living_molding_bottom, living_light, 
-								shoes, veranda, dress, trash, single, super_single, double, queen, king, super_king, ultra_king, 
+								shoes, veranda, dress, trash, single, super_single, double_, queen, king, super_king, ultra_king, 
 								order_production, membership_one, membership_two, membership_three, washcar, joint_toilet, 
 								joint_bathroom_sink, joint_door, joint_dress, joint_, disinfect, pest, rat, disinfect_and_pest, 
 								house_new, house_move, house_live, date)
@@ -15,7 +15,7 @@
 		#{double_window_B_living}, #{double_window_B_veranda}, #{single_window_S_kitchen_dress}, #{single_window_M_room}, 
 		#{single_window_B_living}, #{single_window_B_veranda}, #{room_floor}, #{room_drawer}, #{room_light}, #{room_molding_top}, 
 		#{room_molding_bottom}, #{living_floor}, #{living_artwall}, #{living_molding_top}, #{living_molding_bottom}, #{living_light}, 
-		#{shoes}, #{veranda}, #{dress}, #{trash}, #{single}, #{super_single}, #{double}, #{queen}, #{king}, #{super_king}, #{ultra_king}, 
+		#{shoes}, #{veranda}, #{dress}, #{trash}, #{single}, #{super_single}, #{double_}, #{queen}, #{king}, #{super_king}, #{ultra_king}, 
 		#{order_production}, #{membership_one}, #{membership_two}, #{membership_three}, #{washcar}, #{joint_toilet}, 
 		#{joint_bathroom_sink}, #{joint_door}, #{joint_dress}, #{joint_}, #{disinfect}, #{pest}, #{rat}, #{disinfect_and_pest}, 
 		#{house_new}, #{house_move}, #{house_live}, #{date})

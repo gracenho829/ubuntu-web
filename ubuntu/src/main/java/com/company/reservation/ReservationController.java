@@ -14,7 +14,7 @@ public class ReservationController {
 	@Autowired
 	ReservationService ReservationService;
 	
-	@RequestMapping(value = "/list", method = RequestMethod.GET)
+	/*@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public String Reservationlist(Model model) {
 		model.addAttribute("list", ReservationService.getReservationList());
 		return "Reservation/list";
@@ -23,7 +23,7 @@ public class ReservationController {
 	@RequestMapping(value = "/add", method = RequestMethod.GET)
 	public String addPost() {
 		return "Reservation/addreservationform";
-	}
+	}*/
 	
 	@RequestMapping(value = "/addok", method = RequestMethod.POST)
 	public String addPostOK(ReservationVO vo) {
@@ -31,10 +31,10 @@ public class ReservationController {
 			System.out.println("데이터 추가 실패 ");
 		else
 			System.out.println("데이터 추가 성공!!!");
-		return "redirect:list";
+		return "redirect:../test";
 	}
 	
-	@RequestMapping(value = "/detail/{id}", method = RequestMethod.GET)
+	/*@RequestMapping(value = "/detail/{id}", method = RequestMethod.GET)
 	public String detailPost(@PathVariable("id") int id, Model model) {
 		ReservationVO reservationVO = ReservationService.getReservation(id);
 		model.addAttribute("u", reservationVO);
@@ -48,6 +48,6 @@ public class ReservationController {
 		else
 			System.out.println("데이터 삭제 성공!!!");
 		return "redirect:../list";
-	}
+	}*/
 	
 }
