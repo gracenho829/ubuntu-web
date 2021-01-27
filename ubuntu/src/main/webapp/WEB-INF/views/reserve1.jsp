@@ -53,6 +53,7 @@ a {
 .list-group-item{
 	margin-top: 10px;
 	display:inline-block;
+	visibility:hidden;
 }
 
 .fa-plus-circle{
@@ -72,7 +73,7 @@ h6{
 
 #submit{
 	margin-top:50px;
-	margin-bottom:20px;
+	margin-bottom:10px;
 	float:right;
 	margin-right:150px;
 	border: none;
@@ -166,12 +167,7 @@ visibility:hidden;
 							  <input type="checkbox" class="form-check list-group-item">냉장고<span id="money">42,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
 						</div>
-						
-						
-						<div class="form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons"> 
-  
-  
-  
+						<div class="form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons"> </div>
 					</div>
 				</div>
 			</div>
@@ -186,7 +182,7 @@ visibility:hidden;
 				<div id="flush-collapseTwo-bk" class="accordion-collapse collapse"
 					aria-labelledby="flush-headingTwo-bk"
 					data-bs-parent="#accordionFlushExample-bk">
-			</div>
+				</div>
 			</div>
 		</div>
 		<!--              B&K              -->
@@ -198,7 +194,6 @@ visibility:hidden;
 		<div class="bodyHeader">
 			<h1>창문  |  Windows</h1>
 			<button type="button" class="btn btn-outline-primary" style="background-color:#40B7EE; color:white; border:none; height: 40px; width: 150px; border-radius: 10px; margin-top:5px; float:right; margin-right:10px;">모든 옵션 선택</button>
-			
 		</div>
 		<div class="accordion accordion-flush" id="accordionFlushExample-window">
 			<div class="accordion-item">
@@ -213,7 +208,7 @@ visibility:hidden;
 					aria-labelledby="flush-headingOne-window"
 					data-bs-parent="#accordionFlushExample-window">
 					<div class="accordion-body">
-						<div class="d-grid gap-2">
+						<div class="d-grid gap-2 form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons">
 							<label class="btn btn-primary">
 							  <input type="checkbox" class="form-check list-group-item">소형 (부엌)<span id="money">4,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
@@ -242,7 +237,7 @@ visibility:hidden;
 					aria-labelledby="flush-headingTwo-window"
 					data-bs-parent="#accordionFlushExample-window">
 					<div class="accordion-body">
-						<div class="d-grid gap-2">
+					<div class="d-grid gap-2 form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons">
 							<label class="btn btn-primary">
 							  <input type="checkbox" class="form-check list-group-item">소형 (부엌)<span id="money">3,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
@@ -257,7 +252,7 @@ visibility:hidden;
 							</label>	
 						</div>
 					</div>
-			</div>
+				</div>
 			</div>
 		</div>
 		
@@ -270,6 +265,7 @@ visibility:hidden;
 			<button type="button" class="btn btn-outline-primary" style="background-color:#40B7EE; color:white; border:none; height: 40px; width: 150px; border-radius: 10px; margin-top:5px; float:right; margin-right:10px;">모든 옵션 선택</button>
 		</div>
 		<div class="accordion accordion-flush" id="accordionFlushExample-room">
+		
 			<div class="accordion-item">
 				<h2 class="accordion-header" id="flush-headingOne-room">
 					<button class="accordion-button collapsed" type="button"
@@ -282,20 +278,20 @@ visibility:hidden;
 					aria-labelledby="flush-headingOne-room"
 					data-bs-parent="#accordionFlushExample-room">
 					<div class="accordion-body">
-						<div class="d-grid gap-2">
-							<label class="btn btn-primary">
-							  <input type="checkbox" class="form-check list-group-item">바닥 (Floor)<span id="money">20,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
-							</label>
-							<label class="btn btn-primary">
-							  <input type="checkbox" class="form-check list-group-item">전등 (Light)<span id="money">1,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
-							</label>
-							<label class="btn btn-primary">
-							  <input type="checkbox" class="form-check list-group-item">Top Molding<span id="money">2,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
-							</label>
-							<label class="btn btn-primary">
-							  <input type="checkbox" class="form-check list-group-item">Under Molding<span id="money">2,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
-							</label>
-						</div>
+						<div class="d-grid gap-2 form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons">
+								<label class="btn btn-primary">
+								  <input type="checkbox" class="form-check list-group-item">바닥 (Floor)<span id="money">20,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+								</label>
+								<label class="btn btn-primary">
+								  <input type="checkbox" class="form-check list-group-item">전등 (Light)<span id="money">1,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+								</label>
+								<label class="btn btn-primary">
+								  <input type="checkbox" class="form-check list-group-item">Top Molding<span id="money">2,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+								</label>
+								<label class="btn btn-primary">
+								  <input type="checkbox" class="form-check list-group-item">Under Molding<span id="money">2,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+								</label>
+							</div>
 					</div>
 				</div>
 			</div>
@@ -313,10 +309,10 @@ visibility:hidden;
 					aria-labelledby="flush-headingTwo-room"
 					data-bs-parent="#accordionFlushExample-room">
 					<div class="accordion-body">
-						<div class="d-grid gap-2">
+					<div class="d-grid gap-2 form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons">
 						<label class="btn btn-primary">
 							  <input type="checkbox" class="form-check list-group-item">바닥 (Floor)<span id="money">30,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
-							</label>
+						</label>
 							<label class="btn btn-primary">
 							  <input type="checkbox" class="form-check list-group-item">전등 (Light)<span id="money">3,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
@@ -346,15 +342,12 @@ visibility:hidden;
 					aria-labelledby="flush-headingThree-room"
 					data-bs-parent="#accordionFlushExample-room">
 					<div class="accordion-body">
-						<div class="d-grid gap-2">
+						<div class="d-grid gap-2 form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons">
 							<label class="btn btn-primary">
 							  <input type="checkbox" class="form-check list-group-item">Room<span id="money">8,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
 							<label class="btn btn-primary">
 							  <input type="checkbox" class="form-check list-group-item">Shoes<span id="money">8,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
-							</label>
-							<label class="btn btn-primary">
-							  <input type="checkbox" class="form-check list-group-item">Shoes<span id="Kitchen">8,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
 						</div>	
 						</div>
@@ -363,18 +356,18 @@ visibility:hidden;
 			
 				
 			<div class="accordion-item">
-				<h2 class="accordion-header" id="flush-headingTwo">
+				<h2 class="accordion-header" id="flush-headingFour">
 					<button class="accordion-button collapsed" type="button"
-						data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
-						aria-expanded="false" aria-controls="flush-collapseTwo"
+						data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+						aria-expanded="false" aria-controls="flush-collapseFour"
 						style="padding-left: 50px; height: 80px;font-size:20px;">
 						집진드기 매트릭스 (Special)</button>
 				</h2>
-				<div id="flush-collapseTwo" class="accordion-collapse collapse"
-					aria-labelledby="flush-headingTwo"
+				<div id="flush-collapseFour" class="accordion-collapse collapse"
+					aria-labelledby="flush-headingFour"
 					data-bs-parent="#accordionFlushExample">
 					<div class="accordion-body">
-						<div class="d-grid gap-2">
+					<div class="d-grid gap-2 form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons">
 						<label class="btn btn-primary">
 							  <input type="checkbox" class="form-check list-group-item">싱글 Single<span id="money">5,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
@@ -382,16 +375,16 @@ visibility:hidden;
 							  <input type="checkbox" class="form-check list-group-item">슈퍼싱글 Super Single<span id="money">6,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
 							<label class="btn btn-primary">
-							  <input type="checkbox" class="form-check list-group-item">더블 Double<span id="Kitchen">7,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							  <input type="checkbox" class="form-check list-group-item">더블 Double<span id="money">7,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
 							<label class="btn btn-primary">
-							  <input type="checkbox" class="form-check list-group-item">퀸 / 킹<span id="Kitchen">8,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							  <input type="checkbox" class="form-check list-group-item">퀸 / 킹<span id="money">8,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
 							<label class="btn btn-primary">
-							  <input type="checkbox" class="form-check list-group-item">슈퍼킹 / 울트라<span id="Kitchen">12,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							  <input type="checkbox" class="form-check list-group-item">슈퍼킹 / 울트라<span id="money">12,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
 							<label class="btn btn-primary">
-							  <input type="checkbox" class="form-check list-group-item">주문제작<span id="Kitchen">현장상담</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							  <input type="checkbox" class="form-check list-group-item">주문제작<span id="money">현장상담</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
 							</div>	
 						</div>
@@ -539,8 +532,10 @@ visibility:hidden;
 					aria-labelledby="flush-headingOne-special"
 					data-bs-parent="#accordionFlushExample-special">
 					<div class="accordion-body">
-						<div class="d-grid gap-2">
-							<button class="btn btn-primary" type="button">only 아파트 지하주차장<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">외부 20,000</span></button>
+						<div class="d-grid gap-2 form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons">
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">only 아파트 지하주차장<span id="money">외부 20,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
 						</div>
 					</div>
 				</div>
@@ -557,21 +552,21 @@ visibility:hidden;
 					aria-labelledby="flush-headingTwo-special"
 					data-bs-parent="#accordionFlushExample-special">
 					<div class="accordion-body">
-						<div class="d-grid gap-2">
+						<div class="d-grid gap-2 form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons">
 							<label class="btn btn-primary">
-							  <input type="checkbox" class="form-check list-group-item">화장실 <span id="Kitchen">100,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							  <input type="checkbox" class="form-check list-group-item">화장실 <span id="money">100,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
 							<label class="btn btn-primary">
-							  <input type="checkbox" class="form-check list-group-item">욕실&세면대<span id="Kitchen">70,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							  <input type="checkbox" class="form-check list-group-item">욕실&세면대<span id="money">70,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
 							<label class="btn btn-primary">
-							  <input type="checkbox" class="form-check list-group-item">현관<span id="Kitchen">70,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							  <input type="checkbox" class="form-check list-group-item">현관<span id="money">70,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
 							<label class="btn btn-primary">
-							  <input type="checkbox" class="form-check list-group-item">다용도실<span id="Kitchen">100,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							  <input type="checkbox" class="form-check list-group-item">다용도실<span id="money">100,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
 							<label class="btn btn-primary">
-							  <input type="checkbox" class="form-check list-group-item">부엌<span id="Kitchen">90,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							  <input type="checkbox" class="form-check list-group-item">부엌<span id="money">90,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
 						</div>
 					</div>
@@ -591,18 +586,18 @@ visibility:hidden;
 					aria-labelledby="flush-headingThree-special"
 					data-bs-parent="#accordionFlushExample-special">
 					<div class="accordion-body">
-						<div class="d-grid gap-2">
+						<div class="d-grid gap-2 form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons">
 							<label class="btn btn-primary">
-							  <input type="checkbox" class="form-check list-group-item">전염병 예방 소독 (메르스, 코로나19, 등)<span id="Kitchen">30,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							  <input type="checkbox" class="form-check list-group-item">전염병 예방 소독 (메르스, 코로나19, 등)<span id="money">30,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
 							<label class="btn btn-primary">
-							  <input type="checkbox" class="form-check list-group-item">병충해 박멸 (바퀴벌레, 나방, 등)<span id="Kitchen">50,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							  <input type="checkbox" class="form-check list-group-item">병충해 박멸 (바퀴벌레, 나방, 등)<span id="money">50,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
 							<label class="btn btn-primary">
-							  <input type="checkbox" class="form-check list-group-item">쥐 취소 3개월 관리<span id="Kitchen">50,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							  <input type="checkbox" class="form-check list-group-item">쥐 취소 3개월 관리<span id="money">50,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
 							<label class="btn btn-primary">
-							  <input type="checkbox" class="form-check list-group-item">멤버쉽제 운영 전염병 + 예방소독 + 병충해 박멸<span id="Kitchen">50,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							  <input type="checkbox" class="form-check list-group-item">멤버쉽제 운영 전염병 + 예방소독 + 병충해 박멸<span id="money">50,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
 							
 							<div style="margin-left:20px;">
@@ -630,14 +625,12 @@ visibility:hidden;
 			</div>
 		</div>
 		</div>
-		<!--  Special Service  -->
-					
-					
+		<!--  Special Service  -->		
 		</div>
-	</div>
-    <!-- Accordion End -->
-    <button id="submit" type="submit" class="btn btn-default">
+		<button id="submit" type="submit" class="btn btn-default">
                   $40,000 주문하기 <i style="margin-left:15px;"class="fas fa-arrow-circle-right"></i></button>
+    <!-- Accordion End -->
+ 
 
     
 	<!-- -------------- Footer --------------  -->
