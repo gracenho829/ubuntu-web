@@ -34,6 +34,7 @@
     <meta name="theme-color" content="#478ac9">
     <link rel="canonical" href="index.html">
     <meta property="og:url" content="index.html">
+
 </head>
 <body class="u-body">
 
@@ -93,7 +94,7 @@
 	C57.8,2.6,35.2,12.2,16.8,28.2C4,39.3-10.7,68.6,11.4,78.1c13.6,5.8,26.8,13,38.5,22.7c12,10,20.6,22.9,35.7,27.5
 	C108.6,135.2,128.6,119.9,141.6,99.5L141.6,99.5z"></path></svg>
         </div>
-        <h1 class="u-custom-font u-text u-text-custom-color-1 u-text-1">우분투,<br>당신이 있기에&nbsp;우리가 있다.&nbsp;
+        <h1 class="u-custom-font u-text u-text-custom-color-1 u-text-1">당신이 있기에&nbsp;<br>저희가 있습니다.&nbsp;
         </h1>
         <h4 class="u-text u-text-custom-color-9 u-text-2">Lorem ipsum dolor sit amet,&nbsp;consectetur adipiscing elit. <br>frin fringiat. Duis fringilla&nbsp;​ccumsan nibh elit quis.&nbsp;
         </h4>
