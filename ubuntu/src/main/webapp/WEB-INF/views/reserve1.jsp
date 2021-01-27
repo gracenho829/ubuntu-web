@@ -21,6 +21,15 @@ function myFunction() {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/7ca52d4200.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="resources/reserve1.css">
+
+
+	<!-- include the CSS files -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<!-- include the JavaScript files -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
 </head>
 <style>
 .body{
@@ -70,6 +79,10 @@ h6{
 body{
 padding-bottom:0px;
 }
+
+.form-check label input[type="checkbox"] {
+  opacity:0;
+}
 </style>
 <body>
 
@@ -109,6 +122,7 @@ padding-bottom:0px;
 			<button type="button" class="btn btn-outline-primary" style="background-color:#40B7EE; color:white; border:none; height: 40px; width: 150px; border-radius: 10px; margin-top:5px; float:right; margin-right:10px;">모든 옵션 선택</button>
 			
 		</div>
+  
 		<div class="accordion accordion-flush" id="accordionFlushExample-bk">
 			<div class="accordion-item">
 				<h2 class="accordion-header" id="flush-headingOne-bk">
@@ -122,11 +136,26 @@ padding-bottom:0px;
 					aria-labelledby="flush-headingOne-bk"
 					data-bs-parent="#accordionFlushExample-bk">
 					<div class="accordion-body">
-						<div class="d-grid gap-2">
+						<div class="d-grid gap-2 form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons">
 							<button class="btn btn-primary" type="button">서랍장<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">8,000</span></button>
 							
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">Quater 1<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">42,000</span>
+							</label>
+							
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">Quater 1<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">42,000</span>
+							</label>
+							
+						
 							<button class="btn btn-primary" type="button">냉장고<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">42,000</span></button>
 						</div>
+						
+						
+						<div class="form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons"> 
+  
+  
+  
 					</div>
 				</div>
 			</div>
@@ -252,9 +281,9 @@ padding-bottom:0px;
 							<button class="btn btn-primary" type="button"> 전등 (Light)<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">3,000</span></button>
 							<button class="btn btn-primary" type="button">Top Molding<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">3,000</span></button>
 							<button class="btn btn-primary" type="button">Under Molding<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">1,000</span></button>
-						</div>	
 						</div>
 					</div>
+				</div>
 			</div>
 			
 			<div class="accordion-item">
