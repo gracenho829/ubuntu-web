@@ -47,16 +47,24 @@ a {
 	text-align: left;
 	font-size: 20px;
 	line-height:1.8em;
-	padding: 10px 30px 20px 70px;
+	padding: 0px 0px 10px 40px;
 	border: 1px solid #40B7EE; 
+}
+.list-group-item{
+	margin-top: 10px;
+	display:inline-block;
 }
 
 .fa-plus-circle{
-    float: right;
-  	margin-top: 25px;
+    position:absolute;
+    right: 30px;
+  	top: 33px;
     width: 10px;
     height: 40px;
     color: #40B7EE; 
+}
+h1{
+	color:#40B7EE; 
 }
 h6{
 	line-height: 1.6em;
@@ -82,6 +90,20 @@ padding-bottom:0px;
 
 .form-check label input[type="checkbox"] {
   opacity:0;
+}
+
+#money{
+	float:right; 
+	color:#40b7ee;
+	margin-top: 25px; 
+	margin-right: 50px;
+}
+#smallExplanation{
+	font-size: 12px;
+	margin-left: 20px;
+}
+input [type=checkbox]{
+visibility:hidden;
 }
 </style>
 <body>
@@ -137,18 +159,12 @@ padding-bottom:0px;
 					data-bs-parent="#accordionFlushExample-bk">
 					<div class="accordion-body">
 						<div class="d-grid gap-2 form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons">
-							<button class="btn btn-primary" type="button">서랍장<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">8,000</span></button>
-							
 							<label class="btn btn-primary">
-							  <input type="checkbox" class="form-check list-group-item">Quater 1<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">42,000</span>
+							  <input type="checkbox" class="form-check list-group-item">서랍장<span id="money">8,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
-							
 							<label class="btn btn-primary">
-							  <input type="checkbox" class="form-check list-group-item">Quater 1<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">42,000</span>
+							  <input type="checkbox" class="form-check list-group-item">냉장고<span id="money">42,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
-							
-						
-							<button class="btn btn-primary" type="button">냉장고<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">42,000</span></button>
 						</div>
 						
 						
@@ -198,11 +214,18 @@ padding-bottom:0px;
 					data-bs-parent="#accordionFlushExample-window">
 					<div class="accordion-body">
 						<div class="d-grid gap-2">
-							<button class="btn btn-primary" type="button">소형 (부엌)<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">4,000</span></button>
-							
-							<button class="btn btn-primary" type="button">중형 (room)<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">7,000</span></button>
-							<button class="btn btn-primary" type="button">대형 (거실용)<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">11,000</span></button>
-							<button class="btn btn-primary" type="button">대형 (베란다)<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">12,000</span></button>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">소형 (부엌)<span id="money">4,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">중형 (room)<span id="money">7,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">대형 (거실용)<span id="money">11,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">대형 (베란다)<span id="money">12,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
 						</div>
 					</div>
 				</div>
@@ -220,10 +243,18 @@ padding-bottom:0px;
 					data-bs-parent="#accordionFlushExample-window">
 					<div class="accordion-body">
 						<div class="d-grid gap-2">
-							<button class="btn btn-primary" type="button">소형 (부엌)<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">3,000</span></button>
-							<button class="btn btn-primary" type="button">중형 (room)<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">5,000</span></button>
-							<button class="btn btn-primary" type="button">대형 (거실용)<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">9,000</span></button>
-							<button class="btn btn-primary" type="button">대형 (베란다)<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">10,000</span></button>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">소형 (부엌)<span id="money">3,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">중형 (room)<span id="money">5,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">대형 (거실용)<span id="money">9,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">대형 (베란다)<span id="money">10,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>	
 						</div>
 					</div>
 			</div>
@@ -252,11 +283,18 @@ padding-bottom:0px;
 					data-bs-parent="#accordionFlushExample-room">
 					<div class="accordion-body">
 						<div class="d-grid gap-2">
-							<button class="btn btn-primary" type="button">바닥 (Floor)<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">20,000</span></button>
-							
-							<button class="btn btn-primary" type="button"> 전등 (Light)<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">1,000</span></button>
-							<button class="btn btn-primary" type="button">Top Molding<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">2,000</span></button>
-							<button class="btn btn-primary" type="button">Under Molding<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">2,000</span></button>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">바닥 (Floor)<span id="money">20,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">전등 (Light)<span id="money">1,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">Top Molding<span id="money">2,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">Under Molding<span id="money">2,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
 						</div>
 					</div>
 				</div>
@@ -276,11 +314,21 @@ padding-bottom:0px;
 					data-bs-parent="#accordionFlushExample-room">
 					<div class="accordion-body">
 						<div class="d-grid gap-2">
-							<button class="btn btn-primary" type="button">바닥 (Floor)<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">30,000</span></button>
-							<button class="btn btn-primary" type="button">Art Wall<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">3,000</span></button>
-							<button class="btn btn-primary" type="button"> 전등 (Light)<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">3,000</span></button>
-							<button class="btn btn-primary" type="button">Top Molding<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">3,000</span></button>
-							<button class="btn btn-primary" type="button">Under Molding<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">1,000</span></button>
+						<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">바닥 (Floor)<span id="money">30,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">전등 (Light)<span id="money">3,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">Top Molding<span id="money">3,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">Under Molding<span id="money">3,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">Art Wall<span id="money">1,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
 						</div>
 					</div>
 				</div>
@@ -299,10 +347,15 @@ padding-bottom:0px;
 					data-bs-parent="#accordionFlushExample-room">
 					<div class="accordion-body">
 						<div class="d-grid gap-2">
-							<button class="btn btn-primary" type="button">Room<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">8,000</span></button>
-							<button class="btn btn-primary" type="button">Shoes<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">8,000</span></button>
-							<button class="btn btn-primary" type="button">Kitchen<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">8,000</span></button>
-
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">Room<span id="money">8,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">Shoes<span id="money">8,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">Shoes<span id="Kitchen">8,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
 						</div>	
 						</div>
 					</div>
@@ -322,13 +375,25 @@ padding-bottom:0px;
 					data-bs-parent="#accordionFlushExample">
 					<div class="accordion-body">
 						<div class="d-grid gap-2">
-							<button class="btn btn-primary" type="button">싱글 Single<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">5,000</span></button>
-							<button class="btn btn-primary" type="button">슈퍼싱글 Super Single<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">6,000</span></button>
-							<button class="btn btn-primary" type="button">더블 Double<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">7,000</span></button>
-							<button class="btn btn-primary" type="button">퀸 / 킹<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">8,000</span></button>
-							<button class="btn btn-primary" type="button">슈퍼킹 / 울트라킹 <i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">12,000</span></button>
-							<button class="btn btn-primary" type="button">주문제작<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">현장상담</span></button>
-						</div>	
+						<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">싱글 Single<span id="money">5,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">슈퍼싱글 Super Single<span id="money">6,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">더블 Double<span id="Kitchen">7,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">퀸 / 킹<span id="Kitchen">8,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">슈퍼킹 / 울트라<span id="Kitchen">12,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">주문제작<span id="Kitchen">현장상담</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							</div>	
 						</div>
 					</div>
 			</div>
@@ -349,7 +414,7 @@ padding-bottom:0px;
 						data-bs-toggle="collapse" data-bs-target="#flush-collapseOne-everything"
 						aria-expanded="false" aria-controls="flush-collapseOne-everything"
 						style="padding-left: 50px; height: 80px;font-size:20px;">
-					One room (+120,000)<span style="font-size:15px;position:absolute;right:70px;">멤버쉽 (+80,000)</span></button>
+					One room <span style="font-size:15px;position:absolute;right:70px;">(+120,000)</span></button>
 				</h2>
 				<div id="flush-collapseOne-everything" class="accordion-collapse collapse"
 					aria-labelledby="flush-headingOne-everything"
@@ -367,7 +432,7 @@ padding-bottom:0px;
 								data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo-everything"
 								aria-expanded="false" aria-controls="flush-collapseTwo-everything"
 								style="padding-left: 50px; height: 80px; font-size: 20px;">
-								Two room (+152,000)<span style="font-size:15px;position:absolute;right:70px;">멤버쉽 (+115,000)</span></button>
+								Two room <span style="font-size:15px;position:absolute;right:70px;">(+152,000)</span></button>
 						</h2>
 						<div id="flush-collapseTwo-everything" class="accordion-collapse collapse"
 							aria-labelledby="flush-headingTwo-everything"
@@ -387,14 +452,70 @@ padding-bottom:0px;
 								data-bs-toggle="collapse" data-bs-target="#flush-collapseThree-everything"
 								aria-expanded="false" aria-controls="flush-collapseThree-everything"
 								style="padding-left: 50px; height: 80px; font-size: 20px;">
-								Three room (+316,000)<span style="font-size:15px;position:absolute;right:70px;">멤버쉽 (+280,000)</span></button>
+								Three room <span style="font-size:15px;position:absolute;right:70px;">(+316,000)</span></button>
 						</h2>
 						<div id="flush-collapseThree-everything" class="accordion-collapse collapse"
 							aria-labelledby="flush-headingThree-everything"
 							data-bs-parent="#accordionFlushExample-everything">
 							<div class="accordion-body">
 								
-								<h5>화장실2 / 거실1  /  룸3  /  부엌  /  서랍장3  /  베란다  /  드레스룸 </h5>
+								<h6>화장실2 / 거실1  /  룸3  /  부엌  /  서랍장3  /  베란다  /  드레스룸 </h6>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingFour-everything">
+							<button class="accordion-button collapsed" type="button"
+								data-bs-toggle="collapse" data-bs-target="#flush-collapseFour-everything"
+								aria-expanded="false" aria-controls="flush-collapseFour-everything"
+								style="padding-left: 50px; height: 80px; font-size: 20px;">
+							  One room (멤버쉽)<span style="font-size:15px;position:absolute;right:70px;">(+80,000)</span></button>
+						</h2>
+						<div id="flush-collapseFour-everything" class="accordion-collapse collapse"
+							aria-labelledby="flush-headingFour-everything"
+							data-bs-parent="#accordionFlushExample-everything">
+							<div class="accordion-body">
+								
+								<h6>(이중창) 중형  -  room 7000<br>화장실  -  33,000<br>  몰딩상  -  2,000<br>  몰딩하  -  2000 <br>  전등  -  1,000
+								<br>  바닥  -  20,000<br>부엌  -  50,000<br>  서랍장 (Drawers)  -  (room)8000 & (kitchen)8000<br>  쓰레기 처리 (재활용, 음식물, 등)  -  10,000 (75L 기준)</h6>
+					
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingFive-everything">
+							<button class="accordion-button collapsed" type="button"
+								data-bs-toggle="collapse" data-bs-target="#flush-collapseFive-everything"
+								aria-expanded="false" aria-controls="flush-collapseFive-everything"
+								style="padding-left: 50px; height: 80px; font-size: 20px;">
+								Two room (멤버쉽)<span style="font-size:15px;position:absolute;right:70px;">(+115,000)</span></button>
+						</h2>
+						<div id="flush-collapseFive-everything" class="accordion-collapse collapse"
+							aria-labelledby="flush-headingFive-everything"
+							data-bs-parent="#accordionFlushExample-everything">
+							<div class="accordion-body">
+								
+								<h6>(이중창) 중형  -  room 7000<br>화장실  -  33,000<br>  몰딩상  -  2,000<br>  몰딩하  -  2000 <br>  전등  -  1,000
+								<br>  바닥  -  20,000<br>부엌  -  50,000<br>  서랍장 (Drawers)  -  (room)8000 & (kitchen)8000<br>  쓰레기 처리 (재활용, 음식물, 등)  -  10,000 (75L 기준)</h6>
+								<hr style="width:80%;">
+								<h5>+room(몰딩상하/바닥/중형창/전등)</h5>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingSix-everything">
+							<button class="accordion-button collapsed" type="button"
+								data-bs-toggle="collapse" data-bs-target="#flush-collapseSix-everything"
+								aria-expanded="false" aria-controls="flush-collapseSix-everything"
+								style="padding-left: 50px; height: 80px; font-size: 20px;">
+								Three room (멤버쉽) <span style="font-size:15px;position:absolute;right:70px;">(+280,000)</span></button>
+						</h2>
+						<div id="flush-collapseSix-everything" class="accordion-collapse collapse"
+							aria-labelledby="flush-headingSix-everything"
+							data-bs-parent="#accordionFlushExample-everything">
+							<div class="accordion-body">
+								
+								<h6>화장실2 / 거실1  /  룸3  /  부엌  /  서랍장3  /  베란다  /  드레스룸 </h6>
 							</div>
 						</div>
 					</div>
@@ -437,11 +558,21 @@ padding-bottom:0px;
 					data-bs-parent="#accordionFlushExample-special">
 					<div class="accordion-body">
 						<div class="d-grid gap-2">
-							<button class="btn btn-primary" type="button">화장실<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">100,000</span></button>
-							<button class="btn btn-primary" type="button">욕실&세면대<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">70,000</span></button>
-							<button class="btn btn-primary" type="button">현관<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">70,000</span></button>
-							<button class="btn btn-primary" type="button">다용도실<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">100,000</span></button>
-							<button class="btn btn-primary" type="button">부엌<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">90,000</span></button>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">화장실 <span id="Kitchen">100,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">욕실&세면대<span id="Kitchen">70,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">현관<span id="Kitchen">70,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">다용도실<span id="Kitchen">100,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">부엌<span id="Kitchen">90,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
 						</div>
 					</div>
 			</div>
@@ -461,11 +592,20 @@ padding-bottom:0px;
 					data-bs-parent="#accordionFlushExample-special">
 					<div class="accordion-body">
 						<div class="d-grid gap-2">
-							<button class="btn btn-primary" type="button">전염병 예방 소독 (메르스, 코로나19, 등)<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">30,000</span></button>
-							<button class="btn btn-primary" type="button">병충해 박멸 (바퀴벌레, 나방, 등)<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">50,000</span></button>
-							<button class="btn btn-primary" type="button">쥐 취소 3개월 관리<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">50,000</span></button>
-							<button class="btn btn-primary" type="button">멤버쉽제 운영 전염병 + 예방소독 + 병충해 박멸<i class="fas fa-plus-circle"></i><br><span style="font-size: 12px;">50,000</span></button>
-								<div style="margin-left:20px;">
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">전염병 예방 소독 (메르스, 코로나19, 등)<span id="Kitchen">30,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">병충해 박멸 (바퀴벌레, 나방, 등)<span id="Kitchen">50,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">쥐 취소 3개월 관리<span id="Kitchen">50,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							<label class="btn btn-primary">
+							  <input type="checkbox" class="form-check list-group-item">멤버쉽제 운영 전염병 + 예방소독 + 병충해 박멸<span id="Kitchen">50,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							</label>
+							
+							<div style="margin-left:20px;">
 								<br>
 								<div class="form-check form-check-inline">
 									<input class="form-check-input" type="checkbox"
@@ -488,6 +628,7 @@ padding-bottom:0px;
 					</div>
 			</div>
 			</div>
+		</div>
 		</div>
 		<!--  Special Service  -->
 					
