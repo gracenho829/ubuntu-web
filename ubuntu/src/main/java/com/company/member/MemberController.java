@@ -14,7 +14,7 @@ public class MemberController {
 	@Autowired
 	MemberService MemberService;
 	
-	@RequestMapping(value = "/list", method = RequestMethod.GET)
+	/*@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public String userlist(Model model) {
 		model.addAttribute("list", MemberService.getMemberList());
 		return "Member/list";
@@ -23,7 +23,7 @@ public class MemberController {
 	@RequestMapping(value = "/add", method = RequestMethod.GET)
 	public String addPost() {
 		return "Member/addproductform";
-	}
+	}*/
 	
 	@RequestMapping(value = "/addok", method = RequestMethod.POST)
 	public String addPostOK(MemberVO vo) {	
@@ -33,7 +33,7 @@ public class MemberController {
 			System.out.println("데이터 추가 성공!!!");
 		return "redirect:/login/loginpage";
 	}
-	
+	/*
 	@RequestMapping(value = "/editform/{id}", method = RequestMethod.GET)
 	public String editPost(@PathVariable("id") int id, Model model) {
 		MemberVO MemberVO = MemberService.getMember(id);
@@ -58,5 +58,5 @@ public class MemberController {
 			System.out.println("데이터 삭제 성공!!!");
 		return "redirect:../list";
 	}
-	
+	*/
 }

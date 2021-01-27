@@ -16,6 +16,7 @@ function myFunction() {
 <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="resources/style.css">
+<link rel="stylesheet" type="text/css" href="resources/reserve2.css">
 
 
 <!--캘린더link/script-->
@@ -26,16 +27,18 @@ function myFunction() {
 <meta charset="UTF-8">
 <title>주문하기2</title>
 </head>
+<style>
+</style>
 <body>
 	<div class = "header">
 		<a href='home'><img src = "resources/img/logo.jpg"/></a>
 		<h4 id="headerTitle">주문하기</h4>
-		<ul>
-			<a href='intro'><li>브랜드</li></a>
-			<a href='reserve1'><li>예약하기</li></a>
-			<a href='order'><li>브랜드샵</li></a>
-			<a href='com'><li>커뮤니티</li></a>
-			<a href='login/loginpage'><li style="margin-right: 0px;">로그인</li></a>
+		<ul style="margin-top: 10px;">
+			<a href='../intro'><li>브랜드</li></a>
+			<a href='../reserve1'><li>예약하기</li></a>
+			<a href='../order'><li>브랜드샵</li></a>
+			<a href='../com'><li>커뮤니티</li></a>
+			<a href='loginpage'><li style="margin-right: 0px;">로그인</li></a>
 		</ul>
 		
 		<!-- Top Navigation Menu -->
