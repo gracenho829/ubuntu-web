@@ -7,12 +7,17 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.company.member.*;
+
 @Controller
 @RequestMapping(value="/reservation")
 public class ReservationController {
 	
 	@Autowired
 	ReservationService ReservationService;
+	
+	@Autowired
+	MemberService memberservice;
 	
 	/*@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public String Reservationlist(Model model) {
@@ -26,12 +31,14 @@ public class ReservationController {
 	}*/
 	
 	@RequestMapping(value = "/addok", method = RequestMethod.POST)
-	public String addPostOK(ReservationVO vo) {
+	public String addPostOK(ReservationVO vo, MemberVO vo1) {
+		//MemberVO loginvo = memberservice.getMember_login(vo1);
+		//vo.setm
 		if(ReservationService.insertReservation(vo) == 0)
 			System.out.println("데이터 추가 실패 ");
 		else
 			System.out.println("데이터 추가 성공!!!");
-		return "redirect:../test";
+		return "redirect:../reserve2";
 	}
 	
 	/*@RequestMapping(value = "/detail/{id}", method = RequestMethod.GET)

@@ -70,20 +70,28 @@ function myFunction() {
 					<label style="color:#40B7EE; ">예약날짜</label>
 					<input id='calendar-value' type="text"><br><br>
 					<label style="color:#40B7EE; float:left;">예약시간</label>
-					<label>오전</label>
+					<label id = "AMorPM">오전</label>
 				</div>
 				<hr id="calendarHr">
 				</div>
 				<!-- test용 input -->
 			</div>
 			<div id="timeButtons"><!--오전/오후 -->
-				<input type="button" class = "time" id="morning" name="morning" value="오전"/><br>
-				<input type="button" onClick='btnClick()' class = "time" id="afternoon" name="afternoon" value="오후"/>
+				<input type="button" onClick="change0()" class = "time" id="morning" name="morning" value="오전"/><br>
+				<input type="button" onClick="change1()" class = "time" id="afternoon" name="afternoon" value="오후"/>
 			</div>
 		</div>
 	</div>
 	<br><br>
 	
+	<script>
+		function change0(){
+			document.getElementById('AMorPM').innerHTML = '오전';
+		}
+		function change1(){
+			document.getElementById('AMorPM').innerHTML = '오후';
+		}
+	</script>
 	<!--  달력 api -->
 	<script>
 	    jSuites.calendar(document.getElementById('calendar'), {
@@ -97,8 +105,9 @@ function myFunction() {
 	          document.getElementById('calendar-value').value = text; 
 	      }
 	    });
-	</script>
-	
+	    //버튼을 클릭할때 값을 바꿈. 이떄 form만에 숨겨진 input을 만들어서 그 안의 값도 오전 or 오후에 따라서 1또는0로 바뀌도록 하여서 폼을 구현한다.
+	    
+	</script>	
 	
 	<div id = "address">
 		<h2>주소</h2>

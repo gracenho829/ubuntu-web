@@ -9,7 +9,7 @@
 								shoes, veranda, dress, trash, single, super_single, double_, queen, king, super_king, ultra_king, 
 								order_production, membership_one, membership_two, membership_three, washcar, joint_toilet, 
 								joint_bathroom_sink, joint_door, joint_dress, joint_, disinfect, pest, rat, disinfect_and_pest, 
-								house_new, house_move, house_live, date)
+								house_new, house_move, house_live, date, one_room, two_room, three_room)
 		value
 		(#{kitchen}, #{kitchen_drawer}, #{fridge}, #{toilet}, #{double_window_S_kitchen_dress}, #{double_window_M_room}, 
 		#{double_window_B_living}, #{double_window_B_veranda}, #{single_window_S_kitchen_dress}, #{single_window_M_room}, 
@@ -18,7 +18,7 @@
 		#{shoes}, #{veranda}, #{dress}, #{trash}, #{single}, #{super_single}, #{double_}, #{queen}, #{king}, #{super_king}, #{ultra_king}, 
 		#{order_production}, #{membership_one}, #{membership_two}, #{membership_three}, #{washcar}, #{joint_toilet}, 
 		#{joint_bathroom_sink}, #{joint_door}, #{joint_dress}, #{joint_}, #{disinfect}, #{pest}, #{rat}, #{disinfect_and_pest}, 
-		#{house_new}, #{house_move}, #{house_live}, #{date})
+		#{house_new}, #{house_move}, #{house_live}, #{date}, #{one_room}, #{two_room}, #{three_room})
 	</insert>
 	<delete id="deleteReservation">
 		delete from RESERVATION where seq=#{seq}
