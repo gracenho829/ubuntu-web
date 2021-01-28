@@ -13,10 +13,12 @@ h1,h2,h3{
 
 #headerTitle{
 		font-family: 'Noto Sans KR', sans-serif;
-		font-size: 2vw;
-		margin-top:10px;
+		font-size: 20px;
+		margin-top:25px;
 }
-
+#headerList{
+	margin-top:10px;
+}
 .header{
 	padding-top:10px;
 	width:100vw;
@@ -53,6 +55,7 @@ a {
 	font-size: 15px;
 	margin-right: 20px;
 	font-weight:400;
+	color:#40B7EE;
 }
 
 .header h4{
@@ -73,7 +76,7 @@ li:hover{
 	position: relative;
   	left: 0;
   	bottom: 0;
-	height: 130px;
+	height: 180px;
 	background-color: #444;
 	color:white;
 	text-align:center;
@@ -84,12 +87,34 @@ li:hover{
 
 .footer p{
 	margin-top: 5px;
-	font-size: 13px;
+	font-size: 10px;
 }
 
 .footer img{
 	 margin-top:10px;
-	}	
+}	
+
+
+@media (max-width: 939px) {
+	
+	#headerTitle{
+		margin-top:10px;
+	}
+	#headerList{
+		margin-top:15px;
+	}
+	#total h3{
+		font-style:20px;
+	}
+	#total h4{
+		margin-bottom:10px;
+	}
+	#total{
+		height:160px;
+	}
+	
+	
+}
 
 @media (max-width: 767px) {
 	

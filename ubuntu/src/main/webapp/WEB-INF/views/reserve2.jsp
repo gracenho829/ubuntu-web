@@ -28,12 +28,13 @@ function myFunction() {
 <title>주문하기2</title>
 </head>
 <style>
+
 </style>
 <body>
 	<div class = "header">
 		<a href='home'><img src = "resources/img/logo.jpg"/></a>
 		<h4 id="headerTitle">주문하기</h4>
-		<ul style="margin-top: 10px;">
+		<ul id="headerList">
 			<a href='../intro'><li>브랜드</li></a>
 			<a href='../reserve1'><li>예약하기</li></a>
 			<a href='../order'><li>브랜드샵</li></a>
@@ -62,10 +63,18 @@ function myFunction() {
 	<div id = "date">
 		<h2>날짜</h2>
 		<hr class="blue">
-		<div class = "center" style="margin-top:40px;">
+		<div class = "center">
 			<div> <!-- 캘린더  -->
-				<div id='calendar'></div>
-  				<input id='calendar-value' type="text"><!-- test용 input -->
+			<div id='calendar'>
+				<div style="float:left; margin-left: 70px;margin-bottom:10px;">
+					<label style="color:#40B7EE; ">예약날짜</label>
+					<input id='calendar-value' type="text"><br><br>
+					<label style="color:#40B7EE; float:left;">예약시간</label>
+					<label>오전</label>
+				</div>
+				<hr id="calendarHr">
+				</div>
+				<!-- test용 input -->
 			</div>
 			<div id="timeButtons"><!--오전/오후 -->
 				<input type="button" class = "time" id="morning" name="morning" value="오전"/><br>
@@ -188,60 +197,27 @@ function myFunction() {
 		<h2>내 주문</h2>
 		<hr class="blue">
 		<div id="left">
-			<div class = "order">
-				<div class = "info">
-					<h4>화장실 싱크</h4>
-					<p>부설명</p>
-				</div>
+			<div id="order">
+				<h3>대분류</h3>
+				<h4>중분류 / <span style="font-weight:400;"> 소분류 </span><span style="float:right;">8,000</span> </h4>
+				<h4>중분류 / <span style="font-weight:400;"> 소분류 </span><span style="float:right;">8,000</span> </h4>
+				<h4>중분류 / <span style="font-weight:400;"> 소분류 </span><span style="float:right;">8,000</span> </h4>
 			</div>
-			
-			<div class = "order">
-				<div class = "info">
-					<h4>화장실 싱크</h4>
-					<p>부설명</p>
-				</div>
-			</div>
-			
-			<div class = "order">
-				<div class = "info">
-					<h4>화장실 싱크</h4>
-					<p>부설명</p>
-				</div>
-			</div>
-			
-			<div class = "order">
-				<div class = "info">
-					<h4>화장실 싱크</h4>
-					<p>부설명</p>
-				</div>
-			</div>
-			
-			<div class = "order">
-				<div class = "info">
-					<h4>화장실 싱크</h4>
-					<p>부설명</p>
-				</div>
-			</div>
-			
-			<div class = "order">
-				<div class = "info">
-					<h4>화장실 싱크</h4>
-					<p>부설명</p>
-				</div>
+			<div id="order">
+				<h3>대분류</h3>
+				<h4>중분류 / <span style="font-weight:400;"> 소분류 </span><span style="float:right;">8,000</span> </h4>
 			</div>
 		</div>
-		
-		
 		<div id ="right">
 			<div id = "total">
 				<h3>내 주문</h3>
 				<h4>총 금액</h4>
-				<h2>$49.00</h2>
+				<h3 style="float:right; margin-top: 10px;margin-right:10px;">$49.00</h3>
 			</div>
 			<!--  일단 타입 버튼으로 해놨는데 난중에 type submit 으로 꿔도 될 것 같아 -->
 			<input type="button" class ="orderButton" name="order" value="주문하기" /> 
 		</div>
-	</div>
+		</div>
 	
 	
 	

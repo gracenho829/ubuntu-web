@@ -18,11 +18,7 @@
 		font-size: 15px;
 		margin-top: 50px;
 	}
-	
-	.footer{
-		display:none;
-	}
-	
+
 	.center{
 		text-align:center;
 	}
@@ -40,19 +36,26 @@
 
 	#calendar{
 		margin-top:20px;
-		margin-left: 30px;
-		background-color:lightgray;
-		border:none;
+		margin-left: 50px;
+		border:1px solid #40B7EE;
+		border-radius:15px; 
 		width: 400px;
 		height:400px;
 		float:left;
 	}
 	
-	.calendar_{
-		height: 500px;
-		width: 400px;
+	#calendarHr{
+		width:100%;
+		background-color:#40B7EE;
+		border:none;
+		height:1px;
 	}
-
+	#calendar-value{
+		border:none;
+		margin-top: 10px;
+		text-align:center;
+		font-size:15px;
+	}
 	#postal{
 		width: 300px;
 		margin-top: 50px;
@@ -126,7 +129,7 @@
 	#orders{
 		margin-top: 40px;
 		height: 70vh;
-		padding-bottom: 40px;
+		padding-bottom: 100px;
 	}
 	.info{
 		margin-left: 20px;
@@ -134,7 +137,8 @@
 	
 	#left{
 		margin-top:30px;
-		margin-right:70px;
+		margin-right:40px;
+		padding-left:15px;
 		width: 45%;
 		float: left;
 		overflow-y:auto;
@@ -147,25 +151,27 @@
 	
 	display:inline-block;
 	width: 45%;
+	
 	}
 	#total{
 		margin-top: 30px;
-		width: 80%;
-		height: 240px;
+		margin-left:auto;
+		margin-right:auto;
+		width: 50%;
+		height: 180px;
 		background-color: #40B7EE; 
 		color:white;
-		border-radius: 40px;
+		border-radius: 30px;
 		padding-left: 50px;
-		padding-right: 50px;
+		padding-right: 40px;
 		padding-top: 10px;
 	}
 	#total h3{
 		color: white;
-		font-size: 30px;
+		font-size: 20px;
 	}
 	#total h4{
-		font-size: 25px;
-		margin-left: 30px;
+		font-size: 18px;
 		font-weight: 400;
 		margin-top:10px;
 		margin-bottom:10px;
@@ -180,22 +186,33 @@
 	input[type="button"]:hover{
 		cursor:pointer;
 	}
-	
+	#order{
+		margin-left: 30px;
+		margin-right: 20%;
+		margin-top:40px;
+	}
 	.orderButton {
-	
 		margin-top: 30px;
-		width: 100%;
+		margin-left: 15%;
+		width: 70%;
+		height: 60px;
 		border:2px solid #40B7EE;
 		border-radius:20px;
-		height: 60px;
 		background-color:white;
 		font-size: 15px;
+	}
+	
+	#calendarTop{
+		float:left; 
+		margin-left: 70px;
+		margin-bottom:10px;
 	}
 
 
 
 
 @media (max-width: 939px) {
+
 	
 	#date, #address, #orders{
 		height: 400px;
@@ -207,10 +224,9 @@
 		margin-top:20px;
 		margin-left: 20px;
 		margin-right: 30px;
-		background-color:lightgray;
 		border:none;
-		width: 250px;
-		height:250px;
+		width: 350px;
+		height:300px;
 		float:left;
 	}
 	
@@ -267,20 +283,10 @@
 
 	}
 	#left{
-		margin-right: 40px;
+		margin-right: 30px;
+		margin-left:10px;
 	}
 	
-	.order{
-		padding-top: 5px;
-		margin-left: 30px;
-		margin-top: 15px;
-		width: 80%;
-		height: 70px;
-		box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.25);
-		border-radius:20px;
-		
-		
-	}
 	h4{
 		font-weight: 700;
 		font-size:13px;
@@ -295,11 +301,13 @@
 	
 	#total{
 		margin-top: 30px;
+		margin-left: auto;
+		margin-right:auto;
 		width: 85%;
 		height: 200px;
 		background-color: #40B7EE; 
 		color:white;
-		border-radius: 40px;
+		border-radius: 30px;
 		padding-left: 30px;
 		padding-right: 30px;
 		padding-top: 10px;
@@ -327,7 +335,8 @@
 	
 	.orderButton{
 		margin-top: 30px;
-		margin-left: 15px;
+		margin-left: auto;
+		margin-right:auto;
 		width: 100%;
 		border:2px solid #40B7EE;
 		border-radius:20px;
@@ -337,13 +346,15 @@
 	}
 	
 	.orders{
-		padding-bottom: 15px;
+		padding-bottom: 100px;
 	}
+	
+	
 	
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 774px) {
 	#date, #address, #orders{
 		height: 400px;
 	}
@@ -353,12 +364,18 @@
 	#calendar{
 		margin-top:20px;
 		margin-left: 30px;
-		background-color:lightgray;
 		border:none;
 		width: 250px;
 		height:250px;
 		float:left;
 	}
+	
+	#calendarTop{
+		float:left; 
+		margin-left: 10px;
+		margin-bottom:10px;
+	}
+	
 	
 	#timeButtons{
 		margin-top: 50px;
@@ -413,20 +430,10 @@
 
 	}
 	#left{
-		margin-right: 40px;
+		margin-right: 30px;
+		margin-left:10px;
 	}
 	
-	.order{
-		padding-top: 5px;
-		margin-left: 30px;
-		margin-top: 15px;
-		width: 80%;
-		height: 70px;
-		box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.25);
-		border-radius:20px;
-		
-		
-	}
 	h4{
 		font-weight: 700;
 		font-size:13px;
@@ -483,7 +490,7 @@
 	}
 	
 	.orders{
-		padding-bottom: 15px;
+		padding-bottom: 100px;
 	}
 	
 }
@@ -491,13 +498,15 @@
 
 
 @media (max-width: 767px) {
-	#date, #address, #orders{
+	#date{
+	height: 450px;
+	}
+	 #address, #orders{
 		height: 400px;
 	}
 	#calendar{
 		margin-top:20px;
 		margin-left: 30px;
-		background-color:lightgray;
 		border:none;
 		width: 250px;
 		height:250px;
@@ -557,18 +566,10 @@
 
 	}
 	#left{
-		margin-right: 40px;
+		margin-right: 30px;
+		margin-left: 0px;
 	}
 	
-	.order{
-		padding-top: 5px;
-		margin-left: 30px;
-		margin-top: 15px;
-		width: 80%;
-		height: 70px;
-		box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.25);
-		border-radius:20px;
-	}
 	h4{
 		font-weight: 700;
 		font-size:13px;
@@ -584,23 +585,23 @@
 	#total{
 		margin-top: 30px;
 		width: 85%;
-		height: 200px;
+		height: 150px;
 		background-color: #40B7EE; 
 		color:white;
-		border-radius: 40px;
+		border-radius: 20px;
 		padding-left: 30px;
 		padding-right: 30px;
-		padding-top: 10px;
 	}
 	
 	#total h3{
 		color: white;
-		font-size: 25px;
+		font-size: 20px;
 		margin-bottom: 20px;
+		margin-top:10px;
 	}
 	#total h4{
 		font-size: 15px;
-		margin-left: 30px;
+		margin-left: 20px;
 		font-weight: 400;
 		margin-top:0px;
 		margin-bottom:20px;
@@ -614,27 +615,46 @@
 	}
 	
 	.orderButton{
-		margin-top: 30px;
+		margin-top: 10px;
 		margin-left: 15px;
 		width: 100%;
 		border:2px solid #40B7EE;
-		border-radius:20px;
-		height: 50px;
+		border-radius:15px;
+		height: 40px;
 		background-color:white;
 		font-size: 15px;
 	}
 	
 	.orders{
-		padding-bottom: 15px;
+		padding-bottom: 100px;
+	}
+	#order{
+		margin-left: 30px;
+		margin-right:10%;
+		margin-top:30px;
 	}
 	
+	
+}
+@media (max-width: 660px) {
+#date{
+		height: 650px;
+	}
+#calendar{
+		text-align:center;
+		margin-top:10px;
+		margin-right:auto;
+		border:none;
+		width: 400px;
+		height:400px;
+	}
 	
 }
 
 
 @media (max-width: 555px) {
 	#date{
-		height: 550px;
+		height: 650px;
 	}
 	#address{
 		height: 300px;
@@ -643,10 +663,9 @@
 	#calendar{
 		text-align:center;
 		margin-top:10px;
-		background-color:lightgray;
 		border:none;
-		width: 250px;
-		height:250px;
+		width: 400px;
+		height:400px;
 	}
 	
 	#timeButtons{
@@ -689,15 +708,7 @@
 		width:100%;
 		
 	}
-	.order{
-		padding-top: 5px;
-		margin-left: 30px;
-		margin-top: 15px;
-		width: 80%;
-		height: 70px;
-		box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.25);
-		border-radius:20px;
-	}
+	
 	.orderButton{
 		margin-top: 30px;
 		margin-left: 10px;
@@ -708,5 +719,8 @@
 	}
 	#total{
 		width:80%;
+	}
+	.orders{
+	padding-bottom: 180px;
 	}
 }
