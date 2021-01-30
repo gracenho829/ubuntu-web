@@ -141,7 +141,7 @@ visibility:hidden;
     <!--Body Class -->
     <div class = "body">
 
-<form action="reservation/addok" method="POST">
+<form action="reserve2" method="POST">
 		<div class="bodyHeader">
 			<h1>B&K</h1>
 			<button type="button" class="btn btn-outline-primary" style="background-color:#40B7EE; color:white; border:none; height: 40px; width: 150px; border-radius: 10px; margin-top:5px; float:right; margin-right:10px;">모든 옵션 선택</button>

@@ -17,12 +17,14 @@ function myFunction() {
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="resources/style.css">
 <link rel = "stylesheet" type = "text/css" href="resources/reserve3.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
 <title>주문하기3</title>
 </head>
 <body>
 	<div class = "header">
 		<a href='home'><img src = "resources/img/logo.jpg"/></a>
-		<h4 id="headerTitle">주문하기</h4>
+		<h4 id="headerTitle">예약완료</h4>
 		<ul>
 			<a href='intro'><li>브랜드</li></a>
 			<a href='reserve1'><li>예약하기</li></a>
@@ -63,43 +65,34 @@ function myFunction() {
 	
 	
 	
-<!-- ------------- 예약 내역 -------------  -->
-    <div class="wapper">
-        <div id = "reserve_complete">
-            <div id = "top">
-                예약이 완료되었습니다
+<section class="inBox">
+        <div class="title">예약이 완료되었습니다.</div>
+        <div class="info">
+            <div class="content">
+                <div class="key">예약 일자</div>
+                <div class="value">${vo.getDate()} [ 오전 9:30 ]​</div>
+                <div class="key">담당 직원 연락처</div>
+                <div class="value">010-0000-0000</div>
+                <div class="key">주소</div>
+                <div class="value">${vo.getAddress()}</div>
+                <div class="total">총 금액</div>
+                <div class="price">56000원</div>
             </div>
-            <div id = "left">
-                <div id = "reserve_content">
-                    <label class = "title_label" for="reserve_date_title">예약 일자</label><br />
-                    <label class = "data_lable" for="reserve_date_date">1월 14일 2020년  [ 오전 9:30 ]</label><br />
-
-                    <label class = "title_label" for="phone_title">연락처</label><br />
-                    <label class = "data_lable" for="phone_data">010-0000-0000</label><br />
-
-                    <label class = "title_label" for="address_title">주소</label><br />
-                    <label class = "data_lable" for="address_data">대전광역시  xxx로, xxx 아파트 101동 1104호</label><br />
+            <div class="person">
+                <div class="image">
+                    <img src="resources/img/staff.jpg" alt="담당 직원 사진">
                 </div>
-                <div id = "pay">
-                    <p>총 금액</p>
-                    <p>$49.00</p>
+                <div class="nameAndArea">
+                    <div class="name">임체리</div>
+                    <div class="area">대전 서구</div>
                 </div>
-            </div>
-
-            <div id = "vertical_line"></div>
-            
-            <div id = "right">
-                <img id = "staff_img"src="resources/img/staff1.png" alt="담당 직원 사진">
-                <label id = "staff_name" for="staff_name">임체리</label><br />
-                <label id = "staff_area"for="staff_area">대전 서구</label>
-            </div>
-            <div id = "buttom">
-                <button>예약 내역 보기</button>
-                <button type="button" onclick=" location.href='home' ">홈으로</button>
             </div>
         </div>
-    </div>
-    
+    </section>
+    <section class="upNext">
+        <li><button>예약 내역 보기</button></li>
+        <li><button>홈으로</button></li>
+    </section>
     
     
     

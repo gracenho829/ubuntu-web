@@ -37,6 +37,7 @@ public class LoginController {
 		
 		if(loginvo != null) {
 			System.out.println(loginvo.getMemberid());
+			System.out.println(loginvo.getSid());
 			System.out.println(loginvo.getPassword());
 			//System.out.println(loginvo.getPassword());
 			System.out.println("로그인 성공!");
