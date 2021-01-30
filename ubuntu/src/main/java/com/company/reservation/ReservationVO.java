@@ -5,8 +5,12 @@ import java.util.Date;
 public class ReservationVO {
 	private int seq;
 	private String date;
+	private String address;
+	private int member_id;
+	private int am_pm;
 	
 	private int kitchen;
+	
 	private int kitchen_drawer;
 	private int fridge;
 	private int toilet;
@@ -50,7 +54,12 @@ public class ReservationVO {
 	private int membership_one;
 	private int membership_two;
 	private int membership_three;
+	
+	private int one_room;
+	private int two_room;
+	private int three_room;
 
+	
 	private int washcar;
 	private int joint_toilet;
 	private int joint_bathroom_sink;
@@ -65,6 +74,43 @@ public class ReservationVO {
 	private int house_new;
 	private int house_move;
 	private int house_live;
+	
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public int getam_pm() {
+		return am_pm;
+	}
+	public void setam_pm(int am_pm) {
+		this.am_pm = am_pm;
+	}
+	public int getOne_room() {
+		return one_room;
+	}
+	public void setOne_room(int one_room) {
+		this.one_room = one_room;
+	}
+	public int getTwo_room() {
+		return two_room;
+	}
+	public void setTwo_room(int two_room) {
+		this.two_room = two_room;
+	}
+	public int getThree_room() {
+		return three_room;
+	}
+	public void setThree_room(int three_room) {
+		this.three_room = three_room;
+	}
+	public int getMember_id() {
+		return member_id;
+	}
+	public void setMember_id(int member_id) {
+		this.member_id = member_id;
+	}
 	public int getSeq() {
 		return seq;
 	}

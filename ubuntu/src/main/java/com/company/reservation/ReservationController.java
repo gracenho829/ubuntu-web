@@ -3,16 +3,19 @@ package com.company.reservation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.company.member.*;
+
 @Controller
-@RequestMapping(value="/reservation")
 public class ReservationController {
 	
 	@Autowired
 	ReservationService ReservationService;
+	MemberService memberservice;
 	
 	/*@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public String Reservationlist(Model model) {
@@ -25,13 +28,38 @@ public class ReservationController {
 		return "Reservation/addreservationform";
 	}*/
 	
-	@RequestMapping(value = "/addok", method = RequestMethod.POST)
-	public String addPostOK(ReservationVO vo) {
+	@RequestMapping(value = "/reserve2", method = RequestMethod.POST)
+	public String addPostOK(/*@ModelAttribute ReservationVO reservationVO,*/ ReservationVO vo, Model model) {
+		//MemberVO loginvo = memberservice.getMember_login(vo1);
+		//vo.setm
+		/*if(ReservationService.insertReservation(vo) == 0)
+			System.out.println("데이터 추가 실패 ");
+		else
+			System.out.println("데이터 추가 성공!!!");*/
+		model.addAttribute("vo", vo);
+		System.out.println("데이터 확인!");
+		System.out.println(vo.getFridge());
+		System.out.println(vo.getKitchen_drawer());
+		
+		return "reserve2";
+	}
+	
+	@RequestMapping(value = "/reserve3", method = RequestMethod.POST)
+	public String addPostOK2(ReservationVO vo, Model model) {
+		//MemberVO loginvo = memberservice.getMember_login(vo1);
+		//vo.setMember_id(loginvo.getSid());
+		
+		model.addAttribute("vo", vo);
+		
+		//System.out.println(vo.getFridge());
+		//System.out.println(vo.getKitchen_drawer());
+		
 		if(ReservationService.insertReservation(vo) == 0)
 			System.out.println("데이터 추가 실패 ");
 		else
 			System.out.println("데이터 추가 성공!!!");
-		return "redirect:../test";
+			
+		return "reserve3";
 	}
 	
 	/*@RequestMapping(value = "/detail/{id}", method = RequestMethod.GET)
