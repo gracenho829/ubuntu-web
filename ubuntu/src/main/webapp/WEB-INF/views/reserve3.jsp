@@ -80,7 +80,7 @@ function myFunction() {
             </div>
             <div class="person">
                 <div class="image">
-                    <img src="resources/img/staff.jpg" alt="담당 직원 사진">
+                    <img src="resources/img/staff.png" alt="담당 직원 사진">
                 </div>
                 <div class="nameAndArea">
                     <div class="name">임체리</div>
@@ -91,7 +91,7 @@ function myFunction() {
     </section>
     <section class="upNext">
         <li><button>예약 내역 보기</button></li>
-        <li><button>홈으로</button></li>
+        <li><button type="button" onclick=" location.href='home' ">홈으로</button></li>
     </section>
     
     

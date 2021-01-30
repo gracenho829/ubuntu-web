@@ -144,7 +144,7 @@ visibility:hidden;
 <form action="reserve2" method="POST">
 		<div class="bodyHeader">
 			<h1>B&K</h1>
-			<button type="button" class="btn btn-outline-primary" style="background-color:#40B7EE; color:white; border:none; height: 40px; width: 150px; border-radius: 10px; margin-top:5px; float:right; margin-right:10px;">모든 옵션 선택</button>
+			<button type="button" onClick="select1()" class="btn btn-outline-primary" style="background-color:#40B7EE; color:white; border:none; height: 40px; width: 150px; border-radius: 10px; margin-top:5px; float:right; margin-right:10px;">모든 옵션 선택</button>
 		</div>
   
 		<div class="accordion accordion-flush" id="accordionFlushExample-bk">
@@ -162,10 +162,10 @@ visibility:hidden;
 					<div class="accordion-body">
 						<div class="d-grid gap-2 form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons">
 							<label class="btn btn-primary">
-							  <input type="checkbox" name ="kitchen_drawer" class="form-check list-group-item" value="1">서랍장<span id="money">8,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							  <input type="checkbox" id="kitchen_drawer" name ="kitchen_drawer" class="form-check list-group-item" value="1">서랍장<span id="money">8,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
 							<label class="btn btn-primary">
-							  <input type="checkbox" name ="fridge" class="form-check list-group-item" value="1">냉장고<span id="money">42,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
+							  <input type="checkbox" id="fridge" name ="fridge" class="form-check list-group-item" value="1">냉장고<span id="money">42,000</span><i class="fas fa-plus-circle"></i><br><span id="smallExplanation">부설명</span>
 							</label>
 						</div>
 						<div class="form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons"> </div>
@@ -195,6 +195,14 @@ visibility:hidden;
 				</div>
 			</div>
 		</div>
+		
+<script>
+function select1() {
+  	document.getElementById('kitchen_drawer').checked = true;
+  	document.getElementById('fridge').checked = true;
+}
+</script>
+
 		<!--              B&K              -->
 		
 		
