@@ -1,0 +1,10 @@
+@charset "UTF-8";
+#title{
+	width: 100vw;
+	height: 100px;
+	padding: 50px;
+	background-color:light-gray;
+}
+h2{
+	font-size: 30px;
+}

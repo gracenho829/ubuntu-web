@@ -78,5 +78,11 @@ public class HomeController {
 		return "register";
 	
 	}
+	@RequestMapping(value = "/community", method = RequestMethod.GET)
+	public String community() {
+		
+		return "community";
+	
+	}
 	
 }
