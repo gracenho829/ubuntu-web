@@ -66,7 +66,7 @@ function myFunction() {
 		<div class = "center">
 			<div> <!-- 캘린더  -->
 			<div id='calendar'>
-				<div style="float:left; margin-left: 70px;margin-bottom:10px;">
+				<div id="calendarTop">
 					<label style="color:#40B7EE; ">예약날짜</label>
 					<input id='calendar-value' type="text"><br><br>
 					<label style="color:#40B7EE; float:left;">예약시간</label>
