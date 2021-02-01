@@ -82,6 +82,7 @@ li:hover{
 	text-align:center;
 	font-size: 15px;
 	font-weight:300;
+	padding-top: 20px;
 	
 }
 
@@ -92,6 +93,7 @@ li:hover{
 
 .footer img{
 	 margin-top:10px;
+	 margin-bottom:15px;
 }	
 
 

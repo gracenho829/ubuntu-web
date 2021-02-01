@@ -195,6 +195,9 @@ $('.autoplay').slick({
 			</div>
 		</div>
 	</div>
-	
+		<div class = "footer">
+		<img src = "resources/img/logo_white.png" style ="height:30px;">
+		<p>(주) 우분투 | 대표 최진설 | 사업자등록번호 630-88-00736 | 계좌번호 하나은행 856 910009 07204<br>통신판매업신고 000000000000 | 이메일 jinserr3927@naver.com | 본사 대전광역시 서구 월평동363번지 1층 노블한<br> 지사 공장 전라남도 담양군 담양읍 에코산단 6로
+	</div>
 </body>
 </html>
