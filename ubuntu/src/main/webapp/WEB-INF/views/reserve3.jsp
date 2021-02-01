@@ -15,8 +15,8 @@ function myFunction() {
 }
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="resources/style.css">
-<link rel = "stylesheet" type = "text/css" href="resources/reserve3.css">
+<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+<link rel = "stylesheet" type = "text/css" href="resources/css/reserve3.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     
 <title>주문하기3</title>
