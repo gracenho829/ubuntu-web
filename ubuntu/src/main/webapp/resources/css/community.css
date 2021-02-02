@@ -96,7 +96,6 @@ button:hover{
 	padding-right:10px;
 	font-size: 15px;
 	color: white;
-	margin-block-start:2.2em;
 	position:absolute;
 	right: 130px;
 }
@@ -170,6 +169,52 @@ button:hover{
 	margin-bottom: 70px;
 }
 
+.modal-picture{
+	object-fit:cover; 
+	width:250px; 
+	height: 300px;
+	float:left;
+	margin-top:10px;
+}
+.modal-content{
+	height: 500px;
+	width: 50vw;
+	border-radius: 30px;
+	padding:50px 70px;
+}
+
+.modal-h5{
+	margin-top: 20px;
+	color:#40B7EE; 
+	font-size: 15px;
+	font-weight:500;
+}
+
+.modal-input{
+	width: 20vw;
+	border: 1px solid lightgray;
+	border-radius:10px;
+	font-size: 15px;
+	padding-left: 10px;
+}
+
+.modal-checkbox-div{
+	display:flex;
+}
+.modal-checkbox{
+	display:none;
+}
+.checkbox-label{
+	width: 120px;
+	height: 30px;
+	margin-left: 15px;
+	border-radius: 15px;
+	border: 1px solid lightgray;
+	color: lightgray;
+	background-color:white;
+	font-weight: 500;
+	font-size:12px;
+}
 @media (max-width: 770px) {
 	#title{
 		height: 180px;
