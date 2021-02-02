@@ -5,7 +5,7 @@
   <head>
   	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="resources/style.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <meta charset="utf-8">
     <meta name="keywords" content="Noble : 한​">
     <meta name="description" content="">
