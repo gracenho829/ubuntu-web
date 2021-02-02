@@ -195,7 +195,7 @@ $('.autoplay').slick({
 				<h5>Name</h5>
 			</div>
 			<div class="member">
-				<i class="fas fa-plus-circle"></i>
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#personal-application" style="background-color:white; border:none;"><i class="fas fa-plus-circle"></i></button>
 			</div>
 		</div>
 	</div>
@@ -212,21 +212,23 @@ $('.autoplay').slick({
      		<div style="margin-left:2.5em;">
      		<h3>B2B 지원하기</h3>
      		<p style="font-size: 12px;">일정에 맞춰 일자리 신청하고 새로운 수익을 올려보세요!</p>
-     		<h5 class="modal-h5">지원분야</h5>
-     		<div class="modal-checkbox-div">
-
-     			<label class="btn btn-primary checkbox-label" for="office"><input class="modal-checkbox" type="checkbox" id="office" value="office">사무실</label>
-     			<label class="btn btn-primary checkbox-label" for="business"><input class="modal-checkbox" type="checkbox" id="business" value="business">사업장 (카페,병원)</label>
-  			</div>
-  			<div class="modal-checkbox-div">
-     			<label class="btn btn-primary checkbox-label" for="factory"><input class="modal-checkbox" type="checkbox" id="factory" value="factory">공장</label>
-     		<label class="btn btn-primary checkbox-label" for="other"><input class="modal-checkbox" type="checkbox" id="other" value="other">기타</label>
-     		</div>
-
-     		<h5 class="modal-h5">이름</h5>
-     		<input class="modal-input" type="text" placeholder="이름을 입력하세요"/>
-     		<h5 class="modal-h5">전화번호</h5>
-     		<input class="modal-input" type="number" placeholder="'-' 구분없이 입력하세요"/>
+     		<form action="business-application" method="POST">
+	     		<h5 class="modal-h5">지원분야</h5>
+	     		<div class="modal-checkbox-div">
+	     			<label class="btn btn-primary checkbox-label" for="office">사무실</label><input class="modal-checkbox" type="checkbox" id="office" value="office">
+	     			<label class="btn btn-primary checkbox-label" for="business"><input class="modal-checkbox" type="checkbox" id="business" value="business">사업장 (카페,병원)</label>
+	  			</div>
+	  			<div class="modal-checkbox-div">
+	     			<label class="btn btn-primary checkbox-label" for="factory"><input class="modal-checkbox" type="checkbox" id="factory" value="factory">공장</label>
+	     		<label class="btn btn-primary checkbox-label" for="other"><input class="modal-checkbox" type="checkbox" id="other" value="other">기타</label>
+	     		</div>
+	
+	     		<h5 class="modal-h5">이름</h5>
+	     		<input class="modal-input" type="text" placeholder="이름을 입력하세요"/>
+	     		<h5 class="modal-h5">전화번호</h5>
+	     		<input class="modal-input" type="number" placeholder="'-' 구분없이 입력하세요"/>
+	     		<input class="modal-submit" type="submit" value="견적 의뢰하기">
+     		</form>
      		</div>
      	</div>
     </div>
@@ -235,8 +237,35 @@ $('.autoplay').slick({
 
 
 <!--  기업 지원 모달  -->
-	
 
+<!-- Modal -->
+<div class="modal fade" id="personal-application" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div style="display:flex;">
+    	<img src="resources/img/faculty/team.jpeg"  class="modal-picture2">
+    	<div style="margin-left:2.5em;">
+        <h3 class="modal-title" id="exampleModalLabel">파트너 지원하기</h3>
+        <p style="font-size: 12px;">일정에 맞춰 일자리 신청하고 새로운 수익을 올려보세요!</p>
+        <form action="personal-application" method="POST">
+        <h5 class="modal-h5">지원분야</h5>
+        <select id="jobs" name="job-list" form="personal-application">
+		  <option value="가사도우미1">가사도우미</option>
+		  <option value="가사도우미2">가사도우미</option>
+		  <option value="가사도우미3">가사도우미</option>
+		  <option value="가사도우미4">가사도우미</option>
+		</select>
+       	<h5 class="modal-h5">이름</h5>
+	    <input class="modal-input" type="text" placeholder="이름을 입력하세요"/>
+	     <h5 class="modal-h5">전화번호</h5>
+	     <input class="modal-input" type="number" placeholder="'-' 구분없이 입력하세요"/>
+	     <input class="modal-submit" type="submit" value="지원하기">
+	    </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!--  개인 지원 모달 -->
 	<!--  Footer  -->
 		<div class = "footer">

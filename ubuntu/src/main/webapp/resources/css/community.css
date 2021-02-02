@@ -1,8 +1,8 @@
 @charset "UTF-8";
 #title{
 	margin-top:20px;
-	width: 95vw;
-	height: 200px;
+	width: 100vw;
+	height: 300px;
 	padding-left: 5vw;
 	padding-top: 170px;
 	background-image: url("../img/community_header.jpg");
@@ -172,15 +172,23 @@ button:hover{
 .modal-picture{
 	object-fit:cover; 
 	width:250px; 
-	height: 300px;
+	height: 400px;
 	float:left;
 	margin-top:10px;
 }
+.modal-picture2{
+	object-fit:cover; 
+	width:300px; 
+	height: 300px;
+	float:left;
+	margin-top:10px;
+	
+}
 .modal-content{
-	height: 500px;
+	height: 450px;
 	width: 50vw;
 	border-radius: 30px;
-	padding:50px 70px;
+	padding:50px 40px;
 }
 
 .modal-h5{
@@ -214,6 +222,34 @@ button:hover{
 	background-color:white;
 	font-weight: 500;
 	font-size:12px;
+}
+.checkbox-label:hover{
+	background-color: #40B7EE; 
+	border:none;
+	color:white;
+}
+.modal-checkbox:checked + label {
+	background-color: #40B7EE; 
+	border:none;
+	color:white;
+}
+.modal-submit {
+	background-color: #40B7EE; 
+	color:white;
+	border-radius: 10px;
+	margin-top: 20px;
+	height: 35px;
+	border:none;
+	float:right;
+}
+select{
+	width: 20vw;
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	font-size:15px;
+	font-weight: 500;
+	color:lightgray;
+	padding-left: 10px;
 }
 @media (max-width: 770px) {
 	#title{
