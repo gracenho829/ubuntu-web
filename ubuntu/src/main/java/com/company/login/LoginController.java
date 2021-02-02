@@ -39,14 +39,14 @@ public class LoginController {
 			}
 			
 			MemberVO loginvo = memberservice.getMember_login(vo);
-			
+			vo = memberservice.getMember(loginvo.getSid());
 			if(loginvo != null) {
-				System.out.println(loginvo.getMemberid());
-				System.out.println(loginvo.getSid());
-				System.out.println(loginvo.getPassword());
-				//System.out.println(loginvo.getPassword());
+				System.out.println(vo.getMemberid());
+				System.out.println(vo.getSid());
+				System.out.println(vo.getPassword());
+
 				System.out.println("로그인 성공!");
-				session.setAttribute("login", loginvo);
+				session.setAttribute("login", vo);
 				returnURL = "redirect:/home";
 			}else {
 				System.out.println("로그인 실패!");

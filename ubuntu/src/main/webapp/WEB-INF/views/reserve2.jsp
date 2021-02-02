@@ -30,7 +30,7 @@ function myFunction() {
 <style>
 
 </style>
-<body>
+<body onload="pay()">
 	<div class = "header">
 		<a href='home'><img src = "resources/img/logo.jpg"/></a>
 		<h4 id="headerTitle">주문하기</h4>
@@ -39,7 +39,7 @@ function myFunction() {
 			<a href='reserve1'><li>예약하기</li></a>
 			<a href='order'><li>브랜드샵</li></a>
 			<a href='com'><li>커뮤니티</li></a>
-			<a href='loginpage'><li style="margin-right: 0px;">로그인</li></a>
+			<a href='login/loginpage'><li style="margin-right: 0px;">로그인</li></a>
 		</ul>
 		
 		<!-- Top Navigation Menu -->
@@ -201,7 +201,7 @@ function myFunction() {
 			<div id = "total">
 				<h3>내 주문</h3>
 				<h4>총 금액</h4>
-				<h3 style="float:right; margin-top: 10px;margin-right:10px;">$49.00</h3>
+				<h3 style="float:right; margin-top: 10px;margin-right:10px;"><div id="payValue" style="display:inline"></h3>
 			</div>
 			
 			
@@ -290,6 +290,176 @@ function myFunction() {
 	    
 	</script>
 	<script>
+	function pay(){
+		
+		var pay = 0;
+		alert(${vo.getKitchen_drawer()});
+		document.getElementById('payValue').innerHTML = p;
+		/*if(${vo.getOne_room()}==1){
+			p+=120000;
+		}
+		if(${vo.getTwo_room()}==1){
+			p+=152000;
+		}
+		if(${vo.getThree_room()}==1){
+			p+=316000;
+		}
+		if(${vo.getKitchen()}==1){
+			p+=50000;
+		}
+		if(${vo.getKitchen_drawer()}==1){
+			p+=8000;
+		}
+		
+		if(${vo.getFridge()}==1){
+			p+=42000;
+		}
+		if(${vo.getToilet()}==1){
+			p+=33000;
+		}
+		if(${vo.getDouble_window_S_kitchen_dress()}==1){
+			p+=4000;
+		}
+		if(${vo.getDouble_window_M_room()}==1){
+			p+=7000;
+		}
+		if(${vo.getDouble_window_B_living()}==1){
+			p+=11000;
+		}
+		if(${vo.getDouble_window_B_veranda()}==1){
+			p+=12000;
+		}
+		if(${vo.getSingle_window_S_kitchen_dress()}==1){
+			p+=3000;
+		}
+		if(${vo.getSingle_window_M_room()}==1){
+			p+=5000;
+		}
+		if(${vo.getSingle_window_B_living()}==1){
+			p+=9000;
+		}
+		if(${vo.getSingle_window_B_veranda()}==1){
+			p+=10000;
+		}
+		if(${vo.getRoom_floor()}==1){
+			p+=20000;
+		}
+		if(${vo.getRoom_drawer()}==1){
+			p+=8000;
+		}
+		if(${vo.getRoom_light()}==1){
+			p+=1000;
+		}
+		if(${vo.getRoom_molding_top()}==1){
+			p+=2000;
+		}
+		if(${vo.getRoom_molding_bottom()}==1){
+			p+=2000;
+		}
+		if(${vo.getLiving_floor()}==1){
+			p+=30000;
+		}
+		if(${vo.getLiving_artwall()}==1){
+			p+=1000;
+		}
+		if(${vo.getLiving_molding_top()}==1){
+			p+=3000;
+		}
+		if(${vo.getLiving_molding_bottom()}==1){
+			p+=3000;
+		}
+		if(${vo.getLiving_light()}==1){
+			p+=3000;
+		}
+		if(${vo.getShoes()}==1){
+			p+=8000;
+		}
+		if(${vo.getVeranda()}==1){
+			p+=5000;
+		}
+		if(${vo.getDress()}==1){
+			p+=6000;
+		}
+		if(${vo.getTrash()}==1){
+			p+=7000;
+		}
+		if(${vo.getSingle()}==1){
+			p+=5000;
+		}
+		if(${vo.getSuper_single()}==1){
+			p+=6000;
+		}
+		if(${vo.getDouble_()}==1){
+			p+=7000;
+		}
+		if(${vo.getQueen()}==1){
+			p+=8000;
+		}
+		if(${vo.getKing()}==1){
+			p+=8000;
+		}
+		if(${vo.getSuper_king()}==1){
+			p+=12000;
+		}
+		if(${vo.getUltra_king()}==1){
+			p+=12000;
+		}
+		if(${vo.getMembership_one()}==1){
+			p+=80000;
+		}
+		if(${vo.getMembership_two()}==1){
+			p+=115000;
+		}
+		if(${vo.getMembership_three()}==1){
+			p+=280000;
+		}
+		if(${vo.getWashcar()}==1){
+			p+=20000;
+		}
+		if(${vo.getJoint_toilet()}==1){
+			p+=100000;
+		}
+		if(${vo.getJoint_bathroom_sink()}==1){
+			p+=70000;
+		}
+		if(${vo.getJoint_door()}==1){
+			p+=70000;
+		}
+		if(${vo.getJoint_dress()}==1){
+			p+=10000;
+		}
+		if(${vo.getJoint_()}==1){
+			p+=90000;
+		}
+		if(${vo.getDisinfect()}==1){
+			p+=30000;
+		}
+
+		alert('hi - reda1y');
+		if(${vo.getPest()}==1){
+			p+=50000;
+		}
+		if(${vo.getRat()}==1){
+			p+=50000;
+		}
+		if(${vo.getDisinfect_and_pest()}==1){
+			p+=50000;
+		}
+		if(${vo.getHouse_new()}=='1'){
+			p+=0;
+		}
+		if(${vo.getHouse_move()}=='1'){
+			p+=15000;
+		}
+		if(${vo.getHouse_live()}=='1'){
+			p+=30000;
+		}
+
+		alert('hi - reday');
+		document.getElementById('payValue').innerHTML = p;*/
+		
+	}
+	
 	  		function change0(){
 				document.getElementById('AMorPM').innerHTML = '오전';
 				document.getElementById('AMorPM2').value = '0';
@@ -298,7 +468,7 @@ function myFunction() {
 				document.getElementById('AMorPM').innerHTML = '오후';
 				document.getElementById('AMorPM2').value = '1';
 			}
-	  
+
 	</script>
 	
 	

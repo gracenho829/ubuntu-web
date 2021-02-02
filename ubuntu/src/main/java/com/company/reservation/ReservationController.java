@@ -30,49 +30,41 @@ public class ReservationController {
 	}*/
 	
 	@RequestMapping(value = "/reserve1", method = RequestMethod.GET)
-	public String reserve() {
+	public String reserve(ReservationVO vo, Model model) {
+		model.addAttribute("vo", vo);
 		return "reserve1";
 	}
 	
 	@RequestMapping(value = "/reserve2", method = RequestMethod.POST)
-	public String addPostOK(/*@ModelAttribute ReservationVO reservationVO,*/ HttpSession session, ReservationVO vo, Model model) {
-		//MemberVO loginvo = memberservice.getMember_login(vo1);
-		//vo.setm
-		/*if(ReservationService.insertReservation(vo) == 0)
-			System.out.println("데이터 추가 실패 ");
-		else
-			System.out.println("데이터 추가 성공!!!");*/
+	public String addPostOK(ReservationVO vo, Model model) {
+		
 		model.addAttribute("vo", vo);
 		System.out.println("데이터 확인!");
-		System.out.println(vo.getFridge());
-		System.out.println(vo.getKitchen_drawer());
 		
-		System.out.println(session.getAttribute("login"));
-		membervo = (MemberVO) session.getAttribute("login"); // 세션에서 넘어올땐 데이터타입이 object 형임으로 (businessVO) 타입으로 형변환
-		int sid =  membervo.getSid();
-		String memberid =  membervo.getMemberid();
-		String name = membervo.getMembername();
-		System.out.println(sid);
-		System.out.println(memberid);
-		System.out.println(name);
 		return "reserve2";
 	}
 	
 	@RequestMapping(value = "/reserve3", method = RequestMethod.POST)
-	public String addPostOK2(ReservationVO vo, Model model) {
-		//MemberVO loginvo = memberservice.getMember_login(vo1);
-		//vo.setMember_id(loginvo.getSid());
+	public String addPostOK2(HttpSession session, ReservationVO vo, Model model) {
 		
 		model.addAttribute("vo", vo);
 		
-		//System.out.println(vo.getFridge());
-		//System.out.println(vo.getKitchen_drawer());
+		System.out.println(session.getAttribute("login"));
+		membervo = (MemberVO) session.getAttribute("login"); // 세션에서 넘어올땐 데이터타입이 object 형임으로 (MemberVO) 타입으로 형변환
+		int sid =  membervo.getSid();
+		
+		/*String memberid =  membervo.getMemberid();
+		String name = membervo.getMembername();
+		System.out.println(sid);
+		System.out.println(memberid);
+		System.out.println(name);*/
+		
+		vo.setMember_id(sid);
 		
 		if(ReservationService.insertReservation(vo) == 0)
 			System.out.println("데이터 추가 실패 ");
 		else
 			System.out.println("데이터 추가 성공!!!");
-			
 		return "reserve3";
 	}
 	
