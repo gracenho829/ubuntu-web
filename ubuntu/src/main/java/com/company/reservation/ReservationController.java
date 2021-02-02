@@ -30,7 +30,15 @@ public class ReservationController {
 	}*/
 	
 	@RequestMapping(value = "/reserve1", method = RequestMethod.GET)
-	public String reserve(ReservationVO vo, Model model) {
+	public String reserve(HttpSession session, ReservationVO vo, Model model) {
+		
+			if(session.getAttribute("login") == null) {
+				model.addAttribute("msg", "예약은 로그인 후 이용 가능합니다.");
+				model.addAttribute("url", "login/loginpage");
+				//return "msg";
+			}
+			
+			
 		model.addAttribute("vo", vo);
 		return "reserve1";
 	}
