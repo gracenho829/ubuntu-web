@@ -16,7 +16,6 @@
 		update MEMBER
 		set memberid=#{memberid}, membername=#{membername}, password=#{password}, email=#{email}, phone=#{phone}, address=#{address}
 		where sid=#{sid}
-
 	</update>
 	<delete id="deleteMember">
 		delete from MEMBER where sid=#{sid}

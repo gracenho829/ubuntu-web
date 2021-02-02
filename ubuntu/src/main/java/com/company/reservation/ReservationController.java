@@ -1,10 +1,10 @@
 package com.company.reservation;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -16,6 +16,7 @@ public class ReservationController {
 	@Autowired
 	ReservationService ReservationService;
 	MemberService memberservice;
+	MemberVO membervo;
 	
 	/*@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public String Reservationlist(Model model) {
@@ -28,8 +29,13 @@ public class ReservationController {
 		return "Reservation/addreservationform";
 	}*/
 	
+	@RequestMapping(value = "/reserve1", method = RequestMethod.GET)
+	public String reserve() {
+		return "reserve1";
+	}
+	
 	@RequestMapping(value = "/reserve2", method = RequestMethod.POST)
-	public String addPostOK(/*@ModelAttribute ReservationVO reservationVO,*/ ReservationVO vo, Model model) {
+	public String addPostOK(/*@ModelAttribute ReservationVO reservationVO,*/ HttpSession session, ReservationVO vo, Model model) {
 		//MemberVO loginvo = memberservice.getMember_login(vo1);
 		//vo.setm
 		/*if(ReservationService.insertReservation(vo) == 0)
@@ -41,6 +47,14 @@ public class ReservationController {
 		System.out.println(vo.getFridge());
 		System.out.println(vo.getKitchen_drawer());
 		
+		System.out.println(session.getAttribute("login"));
+		membervo = (MemberVO) session.getAttribute("login"); // 세션에서 넘어올땐 데이터타입이 object 형임으로 (businessVO) 타입으로 형변환
+		int sid =  membervo.getSid();
+		String memberid =  membervo.getMemberid();
+		String name = membervo.getMembername();
+		System.out.println(sid);
+		System.out.println(memberid);
+		System.out.println(name);
 		return "reserve2";
 	}
 	
