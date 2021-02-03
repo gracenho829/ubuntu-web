@@ -12,7 +12,6 @@
 <link rel="shortcut icon" type="image/jpg" href="resources/img/logo.jpg"/>
 <link rel="stylesheet" type="text/css" href="resources/css/all.css"/>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="resources/css/community.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
@@ -20,7 +19,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+<link rel="stylesheet" type="text/css" href="resources/css/community.css">
 <script>
 $(document).ready(function(){
 $('.autoplay').slick({
@@ -32,14 +31,6 @@ $('.autoplay').slick({
 });
 </script>
 <style>
-	@media screen and (max-width: 479px) {
-		.header{
-			background-color: #0C63F1;
-		}
-		.header img{
-			visibility:hidden;
-		}
-	}
 </style>
 </head>
 <body>
@@ -57,7 +48,7 @@ $('.autoplay').slick({
 		<!-- Top Navigation Menu -->
 		<div class="topnav">
 		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-		    <i class="fa fa-bars" style="color:white;"></i>
+		    <i class="fa fa-bars" style="color:black;"></i>
 		  </a>
 		  <div id="myLinks">
 		    <a href='../intro'>브랜드</a>
@@ -241,7 +232,7 @@ $('.autoplay').slick({
 <!-- Modal -->
 <div class="modal fade" id="personal-application" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <div class="modal-content2">
     <div style="display:flex;">
     	<img src="resources/img/faculty/team.jpeg"  class="modal-picture2">
     	<div style="margin-left:2.5em;">
@@ -268,9 +259,9 @@ $('.autoplay').slick({
 </div>
 <!--  개인 지원 모달 -->
 	<!--  Footer  -->
-		<div class = "footer">
-		<img src = "resources/img/logo_white.png" style ="height:30px;">
-		<p>(주) 우분투 | 대표 최진설 | 사업자등록번호 630-88-00736 | 계좌번호 하나은행 856 910009 07204<br>통신판매업신고 000000000000 | 이메일 jinserr3927@naver.com | 본사 대전광역시 서구 월평동363번지 1층 노블한<br> 지사 공장 전라남도 담양군 담양읍 에코산단 6로
+	<div class = "footer">
+		<img src = "resources/img/logo_white.png" style ="height:30px; ">
+		<p>(주) 우분투 | 대표 최진설 | 사업자등록번호 630-88-00736 | 계좌번호 하나은행 856 910009 07204<br>통신판매업신고 000000000000 | 이메일 jinserr3927@naver.com | 본사 대전광역시 서구 월평동363번지 1층 노블한<br>지사 공장 전라남도 담양군 담양읍 에코산단 6로
 	</div>
 </body>
 </html>

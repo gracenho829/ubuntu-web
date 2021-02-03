@@ -34,6 +34,7 @@ h1,h2,h3{
 	height: 30px;
 	margin-left: 8vw;
 	margin-right: 30px;
+	margin-top:10px;
 }
 
 .header ul{
@@ -42,7 +43,7 @@ h1,h2,h3{
 	margin-right: 5vw;
 	position: absolute;
 	right: 10px;
-	margin-top:20px;
+	margin-top:10px;
 }
 
 a {
@@ -186,7 +187,7 @@ li:hover{
 
 .topnav a {
   color: black;
-  padding: 14px 16px;
+  padding: 0px 16px;
   text-decoration: none;
   font-size: 12px;
   display: block;
