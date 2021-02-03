@@ -218,7 +218,9 @@ $('.autoplay').slick({
 	     		<input class="modal-input" type="text" placeholder="이름을 입력하세요"/>
 	     		<h5 class="modal-h5">전화번호</h5>
 	     		<input class="modal-input" type="number" placeholder="'-' 구분없이 입력하세요"/>
+	     		<br>
 	     		<input class="modal-submit" type="submit" value="견적 의뢰하기">
+	     		
      		</form>
      		</div>
      	</div>
