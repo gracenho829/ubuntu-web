@@ -21,8 +21,7 @@ function myFunction() {
     
 <title>주문하기3</title>
 </head>
-<body>
-<!-- --------------Header--------------  -->
+<body onload="ampm()">
 	<div class = "header">
 		<a href="../home"><img src = "resources/img/logo.jpg"/></a>
 		<ul>
@@ -70,7 +69,7 @@ function myFunction() {
         <div class="info">
             <div class="content">
                 <div class="key">예약 일자</div>
-                <div class="value">${vo.getDate()} [ 오전 9:30 ]​</div>
+                <div class="value">${vo.getDate()} [ <div id="AmpmValue" style="display:inline"></div> ]​</div>
                 <div class="key">담당 직원 연락처</div>
                 <div class="value">010-0000-0000</div>
                 <div class="key">주소</div>
@@ -101,5 +100,17 @@ function myFunction() {
 		<img src = "resources/img/logo_white.png" style ="height:30px;">
 		<p>(주) 우분투 | 대표 최진설 | 사업자등록번호 630-88-00736 | 계좌번호 하나은행 856 910009 07204<br>통신판매업신고 000000000000 | 이메일 jinserr3927@naver.com | 본사 대전광역시 서구 월평동363번지 1층 노블한<br> 지사 공장 전라남도 담양군 담양읍 에코산단 6로
 	</div>
+	
+    <script>
+        function ampm(){
+            if(${vo.getam_pm()} == 1){
+                document.getElementById('AmpmValue').innerHTML = '오전';
+            }else{
+                document.getElementById('AmpmValue').innerHTML = '오후';
+            }
+            alert('hi - reday');
+        }
+    </script>
 </body>
+    
 </html>

@@ -3,7 +3,7 @@
 <mapper namespace="Member">
 
 	<select id="getMember_login" resultType="member">
-		select memberid, membername from MEMBER
+		select memberid, membername, password, sid, address from MEMBER
 		where memberid=#{memberid} and password=#{password}
 	</select>
 	
@@ -16,7 +16,6 @@
 		update MEMBER
 		set memberid=#{memberid}, membername=#{membername}, password=#{password}, email=#{email}, phone=#{phone}, address=#{address}
 		where sid=#{sid}
-
 	</update>
 	<delete id="deleteMember">
 		delete from MEMBER where sid=#{sid}

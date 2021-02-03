@@ -8,13 +8,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping(value="/partner")
 public class PartnerController {
 	
 	@Autowired
 	PartnerService PartnerService;
 	
-	@RequestMapping(value = "/list", method = RequestMethod.GET)
+	@RequestMapping(value = "/com", method = RequestMethod.GET)
+	public String community() {
+		
+		return "community";
+	
+	}
+	
+	/*@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public String partnerlist(Model model) {
 		model.addAttribute("list", PartnerService.getPartnerList());
 		return "Partner/list";
@@ -57,6 +63,6 @@ public class PartnerController {
 		else
 			System.out.println("partner 삭제 성공!!!");
 		return "redirect:../list";
-	}
+	}*/
 	
 }

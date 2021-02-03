@@ -1,10 +1,10 @@
 package com.company.reservation;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -16,6 +16,7 @@ public class ReservationController {
 	@Autowired
 	ReservationService ReservationService;
 	MemberService memberservice;
+	MemberVO membervo;
 	
 	/*@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public String Reservationlist(Model model) {
@@ -28,37 +29,50 @@ public class ReservationController {
 		return "Reservation/addreservationform";
 	}*/
 	
+	@RequestMapping(value = "/reserve1", method = RequestMethod.GET)
+	public String reserve(HttpSession session, ReservationVO vo, Model model) {
+		
+			if(session.getAttribute("login") == null) {
+				model.addAttribute("msg", "예약은 로그인 후 이용 가능합니다.");
+				model.addAttribute("url", "login/loginpage");
+				//return "msg";
+			}
+			
+			
+		model.addAttribute("vo", vo);
+		return "reserve1";
+	}
+	
 	@RequestMapping(value = "/reserve2", method = RequestMethod.POST)
-	public String addPostOK(/*@ModelAttribute ReservationVO reservationVO,*/ ReservationVO vo, Model model) {
-		//MemberVO loginvo = memberservice.getMember_login(vo1);
-		//vo.setm
-		/*if(ReservationService.insertReservation(vo) == 0)
-			System.out.println("데이터 추가 실패 ");
-		else
-			System.out.println("데이터 추가 성공!!!");*/
+	public String addPostOK(ReservationVO vo, Model model) {
+		
 		model.addAttribute("vo", vo);
 		System.out.println("데이터 확인!");
-		System.out.println(vo.getFridge());
-		System.out.println(vo.getKitchen_drawer());
 		
 		return "reserve2";
 	}
 	
 	@RequestMapping(value = "/reserve3", method = RequestMethod.POST)
-	public String addPostOK2(ReservationVO vo, Model model) {
-		//MemberVO loginvo = memberservice.getMember_login(vo1);
-		//vo.setMember_id(loginvo.getSid());
+	public String addPostOK2(HttpSession session, ReservationVO vo, Model model) {
 		
 		model.addAttribute("vo", vo);
 		
-		//System.out.println(vo.getFridge());
-		//System.out.println(vo.getKitchen_drawer());
+		System.out.println(session.getAttribute("login"));
+		membervo = (MemberVO) session.getAttribute("login"); // 세션에서 넘어올땐 데이터타입이 object 형임으로 (MemberVO) 타입으로 형변환
+		int sid =  membervo.getSid();
+		
+		/*String memberid =  membervo.getMemberid();
+		String name = membervo.getMembername();
+		System.out.println(sid);
+		System.out.println(memberid);
+		System.out.println(name);*/
+		
+		vo.setMember_id(sid);
 		
 		if(ReservationService.insertReservation(vo) == 0)
 			System.out.println("데이터 추가 실패 ");
 		else
 			System.out.println("데이터 추가 성공!!!");
-			
 		return "reserve3";
 	}
 	
