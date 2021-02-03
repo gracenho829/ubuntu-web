@@ -318,7 +318,7 @@ select{
 	/* table */
 	
 	
-	#bulletin, #partners{
+	#bulletin, #partners, #staff{
 		margin-left:30px;
 	}
 	.together{
@@ -347,11 +347,68 @@ select{
 	#staff{
 		margin-top: 0px;
 		padding-top:20px;
+		
 	}
+	
+	#staff h5{
+		font-size: 15px;
+	}
+	
+	
 }
+
+
+/* Max-Width 630 */
+@media (max-width: 630px) {
+	
+	.separator{
+		margin-bottom: 10px;
+	}
+	
+	.autoplay .item img {
+		width: 100px;
+		height:100px; 
+	}
+	
+	.autoplay h5{
+		font-size:13px;
+	}
+	.autoplay p{
+		font-size:9px;
+	}
+	
+	
+}
+
+	
+
+/* Max-Width 550 */
+@media (max-width: 550px) {
+	#partners, #staff, #sectionTwo{
+		padding-left: 30px;
+		margin-left: 30px;
+	}
+	.autoplay .item img {
+		width: 80px;
+		height:80px; 
+	}
+	
+	.autoplay h5{
+		font-size:13px;
+	}
+	.autoplay p{
+		font-size:9px;
+	}
+	
+}
+
+
+
+
 
 /* Max-Width 479 */
 @media (max-width: 479px) {
+	
 	.header{
 		background-color: white;
 	}
@@ -362,7 +419,7 @@ select{
 	#title{
 		padding-top: 130px;
 		height: 210px;
-		margin-top:0px;
+		margin-top: 20px;
 	}
 
 	#title h2{
@@ -371,19 +428,83 @@ select{
 		color: #40B7EE;
 		
 	}
+	
 	#title p{
 		color:white;
 		font-size: 12px;
 	}
 
 /* Title Header */
+
+	#bulletin{
+		padding-left: 15px;
+		height: 400px;
+	}
+	#partners{
+		padding-left: 15px;
+	}
+	
+	.together{
+		right:56px;
+	}
+	
+	.autoplay .item img {
+		width: 70px;
+		height:70px; 
+	}
+	
+	.autoplay h5{
+		font-size:13px;
+	}
+	.autoplay p{
+		font-size:8px;
+	}
+	
+	#sectionTwo {
+		padding-left:30px;
+		margin-left:20px;
+	}
+	
+	table{
+		width: 80vw;
+	}
+	
+	td, td:last-child{
+		font-size: 12px;
+	}
+	td:nth-child(2){
+		font-size:9px;
+	}
+	#staff{
+		margin-bottom: 30px;
+	}
+	#members{
+		margin-top:30px;
+	}
+	.footer img{
+		margin-top: 10px;
+		margin-bottom:10px;
+	}
+
+	.footer{
+		height: 150px;
+		padding-top: 15px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.footer p{
+		font-size: 7px;
+	}
+	
 }
 
 
 
 
+
 /* Max-Width 350 */
-@media (max-width: 350px) {
+@media (max-width: 385px) {
+	
 	#title p{
 		color:white;
 		font-size: 10px;
