@@ -198,15 +198,15 @@ $('.autoplay').slick({
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
      	<h3>B2B Partners</h3>
-     	<div style="display:flex;">
+     	<div class="modal-info">
      		<img src="resources/img/b2b.jpg" class="modal-picture" >
-     		<div style="margin-left:2.5em;">
+     		<div style="margin-left:2em;">
      		<h3>B2B 지원하기</h3>
      		<p style="font-size: 12px;">일정에 맞춰 일자리 신청하고 새로운 수익을 올려보세요!</p>
      		<form action="business-application" method="POST">
 	     		<h5 class="modal-h5">지원분야</h5>
 	     		<div class="modal-checkbox-div">
-	     			<label class="btn btn-primary checkbox-label" for="office">사무실</label><input class="modal-checkbox" type="checkbox" id="office" value="office">
+	     			<label class="btn btn-primary checkbox-label" for="office"><input class="modal-checkbox" type="checkbox" id="office" value="office">사무실</label>
 	     			<label class="btn btn-primary checkbox-label" for="business"><input class="modal-checkbox" type="checkbox" id="business" value="business">사업장 (카페,병원)</label>
 	  			</div>
 	  			<div class="modal-checkbox-div">

@@ -172,8 +172,8 @@ button:hover{
 
 .modal-picture{
 	object-fit:cover; 
-	width: 80%; 
-	height: 350px;
+	width: 45%; 
+	height: 80%;
 	float:left;
 	margin-top:10px;
 }
@@ -187,7 +187,7 @@ button:hover{
 }
 .modal-content{
 	height: 500px;
-	width: 50vw;
+	width:55vw;
 	border-radius: 30px;
 	padding:50px 40px;
 }
@@ -203,9 +203,11 @@ button:hover{
 	font-size: 15px;
 	font-weight:500;
 }
-
+.modal-info{
+	display:flex;
+}
 .modal-input{
-	width: 20vw;
+	width: 300px;
 	border: 1px solid lightgray;
 	border-radius:10px;
 	font-size: 15px;
@@ -262,12 +264,36 @@ select{
 
 
 
+@media (max-width:1200px) {
+	.autoplay .item img {
+		width: 180px;
+		height:180px; 
+	}
+	.modal-content{
+		width:70vw;
+		padding-left:30px;
+	}
+}
+
+
+@media (max-width:870px) {
+	.autoplay .item img {
+		width: 150px;
+		height:150px; 
+	}
+	.modal-content{
+		width:80vw;
+	}
+	.modal-dialog{
+		margin-left: 5rem;
+	}
+}
 
 
 
 
 /* Max-Width 770 */
-@media (max-width: 770px) {
+@media (max-width:770px) {
 	.header{
 		margin-top:5px;
 	}
@@ -343,6 +369,34 @@ select{
 	}
 	/*autoplay carousel*/
 	
+	.modal-content{
+		width:90vw;
+	}
+	
+	.modal-dialog{
+		margin-left: 30px;
+	}
+	
+	
+	.modal-h5{
+		margin-top: 20px;
+		color:#40B7EE; 
+		font-size: 10px;
+		font-weight:500;
+	}
+	
+	.checkbox-label{
+		width: 100px;
+		height: 30px;
+		margin-left: 15px;
+		border-radius: 15px;
+		border: 1px solid lightgray;
+		color: lightgray;
+		background-color:white;
+		font-weight: 500;
+		font-size:10px;
+	}
+	/* Modal */
 	#staff{
 		margin-top: 0px;
 		padding-top:20px;
@@ -358,7 +412,7 @@ select{
 
 
 /* Max-Width 630 */
-@media (max-width: 630px) {
+@media (max-width: 680px) {
 	
 	.separator{
 		margin-bottom: 10px;
@@ -374,6 +428,23 @@ select{
 	}
 	.autoplay p{
 		font-size:9px;
+	}
+	
+	/* Modal-Content*/
+	
+	.modal-content{
+		padding-left: 30px;
+		width: 95vw;
+	}
+	.modal-dialog{
+		margin-left: 25px;
+	}
+	
+	.modal-input{
+		width: 40vw;
+		border-radius:10px;
+		font-size: 13px;
+		padding-left: 10px;
 	}
 	
 	
@@ -397,6 +468,16 @@ select{
 	}
 	.autoplay p{
 		font-size:9px;
+	}
+	.modal-dialog{
+		margin-left: 10px;
+	}
+	.checkbox-label{
+		width: 80px;
+		height: 25px;
+		margin-left: 12px;
+		border-radius: 10px;
+		font-size:8px;
 	}
 	
 }
@@ -499,7 +580,45 @@ select{
 		font-size: 7px;
 	}
 	
+	/*footer*/
 	
+	
+	.modal-content{
+		height: 110vh;
+	}
+
+	.modal-info{
+		display:contents;
+	}
+	.modal-content img{
+		width: 90%;
+		height: 30%;
+		margin: 20px auto;
+	}
+	.modal-content h5{
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+	
+	.checkbox-label {
+	    width: 40%;
+	    height: 35px;
+	    margin-left: 12px;
+	    border-radius: 15px;
+	    font-size: 15px;
+	}
+	
+	.modal-input{
+		width: 70vw;
+		height: 30px;
+	}
+	.modal-submit{
+		margin-top: 30px;
+		border-radius: 10px;
+		font-size: 12px;
+		padding: 0px 15px;
+	}
+	/* Modal*/
 	
 }
 
