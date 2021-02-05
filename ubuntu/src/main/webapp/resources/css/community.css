@@ -12,7 +12,9 @@
 #title h2{
 	font-size: 30px;
 	color: #40B7EE;
-	
+}
+#tired{
+	margin-left:2em;
 }
 #title p{
 	color:white;
@@ -92,7 +94,7 @@ button:hover{
 
 .together{
 	border:none;
-	border-radius: 20px;
+	border-radius: 15px;
 	height: 50px;
 	background-color:#40B7EE; 
 	padding-left: 10px;
@@ -100,7 +102,7 @@ button:hover{
 	font-size: 15px;
 	color: white;
 	position:absolute;
-	right: 130px;
+	right: 100px;
 }
 
 
@@ -191,7 +193,10 @@ button:hover{
 	border-radius: 30px;
 	padding:50px 40px;
 }
-.modal-content2{
+.modal-dialog{
+	margin-left: 20vw;
+}
+#modal-content2{
 	height: 450px;
 	border-radius: 30px;
 	padding:50px 40px;
@@ -245,13 +250,27 @@ button:hover{
 	background-color: #40B7EE; 
 	color:white;
 	border-radius: 10px;
-	margin-top: 20px;
+	margin-top: 30px;
 	height: 35px;
 	border:none;
 	float:right;
 }
+
+.modal-submit2{
+	background-color: #40B7EE; 
+	color:white;
+	border-radius: 12px;
+	margin-top: 50px;
+	margin-right: 30px;
+	height: 35px;
+	width: 100px;
+	border:none;
+	float:right;
+	
+}
 select{
-	width: 20vw;
+	width: 40vw;
+	height: 25px;
 	border: 1px solid lightgray;
 	border-radius: 10px;
 	font-size:15px;
@@ -273,7 +292,14 @@ select{
 		width:70vw;
 		padding-left:30px;
 	}
+	.modal-dialog{
+		margin-left: 120px;
+	}
+	#modal-content2{
+		width: 80vw;
+	}
 }
+
 
 
 @media (max-width:870px) {
@@ -284,8 +310,16 @@ select{
 	.modal-content{
 		width:80vw;
 	}
+	#modal-content2{
+		width:90vw;
+	}
 	.modal-dialog{
 		margin-left: 5rem;
+	}
+		
+	.together{
+		background-color: #40B7EE; 
+		right: 60px;
 	}
 }
 
@@ -350,7 +384,6 @@ select{
 		height:35px;
 		border-radius:10px;
 		font-size: 10px;
-		
 		right: 70px;
 	}
 	.autoplay{
@@ -372,9 +405,16 @@ select{
 	.modal-content{
 		width:90vw;
 	}
+	#modal-content2{
+		width:95vw;
+	}
+	#modal-content2 img{
+		width:45%;
+		height: 75%;
+	}
 	
 	.modal-dialog{
-		margin-left: 30px;
+		margin-left: 20px;
 	}
 	
 	
@@ -406,6 +446,10 @@ select{
 	#staff h5{
 		font-size: 15px;
 	}
+	.modal-submit2{
+		margin-top:30px;
+		margin-right:10px;
+	}
 	
 	
 }
@@ -416,6 +460,9 @@ select{
 	
 	.separator{
 		margin-bottom: 10px;
+	}
+	.together{
+		right: 50px;
 	}
 	
 	.autoplay .item img {
@@ -479,6 +526,14 @@ select{
 		border-radius: 10px;
 		font-size:8px;
 	}
+	#modal-content2{
+		margin-top: 50px;
+		height: 45vh;
+	}
+	
+	#modal-content2 img{
+		display:none;
+	}
 	
 }
 
@@ -487,7 +542,7 @@ select{
 
 
 /* Max-Width 479 */
-@media (max-width: 479px) {
+@media (max-width: 480px) {
 	
 	.header{
 		background-color: white;
@@ -522,6 +577,7 @@ select{
 	}
 	#partners{
 		padding-left: 15px;
+		margin-left: 20px;
 	}
 	
 	.together{
@@ -529,8 +585,11 @@ select{
 	}
 	
 	.autoplay .item img {
-		width: 70px;
-		height:70px; 
+		width: 75vw;
+		height:75vw;
+	}
+	.autoplay .item{
+		margin-right: 20px;
 	}
 	
 	.autoplay h5{
@@ -619,6 +678,12 @@ select{
 		padding: 0px 15px;
 	}
 	/* Modal*/
+	.member img{
+		height: 30vw;
+	}
+	.member i{
+		font-size: 30vw;
+	}
 	
 }
 
@@ -638,15 +703,34 @@ select{
 	}
 	
 	.autoplay .item img {
-		width: 50px;
-		height:50px; 
+		width: 75vw;
+		height:75vw; 
+	}
+	.together{
+		right: 30px;
 	}
 	
-		
-	.autoplay .item img {
-		width: 50px;
-		height:50px; 
+	.checkbox-label {
+	    width: 80%;
+	    height: 35px;
+	    font-size: 12px;
 	}
+	#tired{
+		margin-left:0px;
+	}
+	
+	
+}
+
+
+
+/* Max-Width 350 */
+@media (max-width: 320px) {
+	
+	#bulletin{
+		height: 400px;
+	}
+	
 }
 
 

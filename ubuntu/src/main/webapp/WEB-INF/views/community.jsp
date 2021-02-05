@@ -22,13 +22,39 @@
 <link rel="stylesheet" type="text/css" href="resources/css/community.css">
 <script>
 $(document).ready(function(){
-$('.autoplay').slick({
-	  slidesToShow: 4,
-	  slidesToScroll: 1,
-	  autoplay: true,
-	  autoplaySpeed: 2000,
-	});
+	if ($(window).width()< 480){
+		$('.autoplay').slick({
+			  slidesToShow: 1,
+			  slidesToScroll: 1,
+			  autoplay: true,
+			  autoplaySpeed: 2000,
+			  pauseOnHover: true,
+			  responsive: [
+				    {
+				      breakpoint: 480, //at 480px wide, only one slide will show
+				      settings: {
+				        slidesToShow: 1,
+				      }
+				    }
+				  ]
+		});
+	}
+	
+	else{
+		$('.autoplay').slick({
+			  slidesToShow: 4,
+			  slidesToScroll: 1,
+			  autoplay: true,
+			  autoplaySpeed: 2000,
+			  pauseOnHover: true,
+		});
+	}
+
+  
+	
 });
+
+
 </script>
 <style>
 </style>
@@ -71,27 +97,27 @@ $('.autoplay').slick({
 		<br>
 		<table border=1 frame=void rules=rows>
 			<tr>
-				<td>공지사항 1번 공지사항 1번 공지사항 1번</td>
+				<td>공지사항 1번 공지사항 1번 </td>
 				<td>2021-01-07</td>
 				<td>우분투</td>
 			</tr>
 			<tr>
-				<td>공지사항 1번 공지사항 1번 공지사항 1번</td>
+				<td>공지사항 1번 공지사항 1번 </td>
 				<td>2021-01-07</td>
 				<td>우분투</td>
 			</tr>
 			<tr>
-				<td>공지사항 1번 공지사항 1번 공지사항 1번</td>
+				<td>공지사항 1번 공지사항 1번 </td>
 				<td>2021-01-07</td>
 				<td>우분투</td>
 			</tr>
 			<tr>
-				<td>공지사항 1번 공지사항 1번 공지사항 1번</td>
+				<td>공지사항 1번 공지사항 1번</td>
 				<td>2021-01-07</td>
 				<td>우분투</td>
 			</tr>
 			<tr>
-				<td>공지사항 1번 공지사항 1번 공지사항 1번</td>
+				<td>공지사항 1번 공지사항 1번 </td>
 				<td>2021-01-07</td>
 				<td>우분투</td>
 			</tr>
@@ -200,7 +226,7 @@ $('.autoplay').slick({
      	<h3>B2B Partners</h3>
      	<div class="modal-info">
      		<img src="resources/img/b2b.jpg" class="modal-picture" >
-     		<div style="margin-left:2em;">
+     		<div id="tired">
      		<h3>B2B 지원하기</h3>
      		<p style="font-size: 12px;">일정에 맞춰 일자리 신청하고 새로운 수익을 올려보세요!</p>
      		<form action="business-application" method="POST">
@@ -234,7 +260,7 @@ $('.autoplay').slick({
 <!-- Modal -->
 <div class="modal fade" id="personal-application" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <div class="modal-content2">
+    <div class="modal-content" id="modal-content2">
     <div style="display:flex;">
     	<img src="resources/img/faculty/team.jpeg"  class="modal-picture2">
     	<div style="margin-left:2.5em;">
@@ -252,7 +278,7 @@ $('.autoplay').slick({
 	    <input class="modal-input" type="text" placeholder="이름을 입력하세요"/>
 	     <h5 class="modal-h5">전화번호</h5>
 	     <input class="modal-input" type="number" placeholder="'-' 구분없이 입력하세요"/>
-	     <input class="modal-submit" type="submit" value="지원하기">
+	     <input class="modal-submit2" type="submit" value="지원하기">
 	    </form>
         </div>
       </div>
